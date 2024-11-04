@@ -4,7 +4,7 @@
 # https://github.com/blog/2392-introducing-code-owners
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
-# KS Assistant Core
+# Home Assistant Core
 .core_files.yaml @home-assistant/core
 .git-blame-ignore-revs @home-assistant/core
 .gitattributes @home-assistant/core
@@ -27,7 +27,7 @@ requirements_test.txt @home-assistant/core
 /pylint/ @home-assistant/core
 /script/ @home-assistant/core
 
-# KS Assistant Supervisor
+# Home Assistant Supervisor
 .dockerignore @home-assistant/supervisor
 build.json @home-assistant/supervisor
 /machine/ @home-assistant/supervisor
@@ -504,8 +504,8 @@ build.json @home-assistant/supervisor
 /tests/components/fritzbox_callmonitor/ @cdce8p
 /homeassistant/components/fronius/ @farmio
 /tests/components/fronius/ @farmio
-/homeassistant/components/frontend/ @home-assistant/frontend
-/tests/components/frontend/ @home-assistant/frontend
+/homeassistant/components/frontend/ @CNWenwuGong/homeassistant-frontend
+/tests/components/frontend/ @CNWenwuGong/homeassistant-frontend
 /homeassistant/components/frontier_silicon/ @wlcrs
 /tests/components/frontier_silicon/ @wlcrs
 /homeassistant/components/fujitsu_fglair/ @crevetor
