@@ -1,4 +1,4 @@
-"""Matter to Home Assistant adapter."""
+"""Matter to KS Assistant adapter."""
 
 from __future__ import annotations
 
@@ -32,7 +32,7 @@ def get_clean_name(name: str | None) -> str | None:
 
 
 class MatterAdapter:
-    """Connect Matter into Home Assistant."""
+    """Connect Matter into KS Assistant."""
 
     def __init__(
         self,

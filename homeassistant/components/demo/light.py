@@ -156,7 +156,7 @@ class DemoLight(LightEntity):
     def available(self) -> bool:
         """Return availability."""
         # This demo light is always available, but well-behaving components
-        # should implement this to inform Home Assistant accordingly.
+        # should implement this to inform KS Assistant accordingly.
         return self._available
 
     @property
@@ -240,7 +240,7 @@ class DemoLight(LightEntity):
             self._brightness = kwargs[ATTR_WHITE]
 
         # As we have disabled polling, we need to inform
-        # Home Assistant about updates in our state ourselves.
+        # KS Assistant about updates in our state ourselves.
         self.async_write_ha_state()
 
     async def async_turn_off(self, **kwargs: Any) -> None:
@@ -248,5 +248,5 @@ class DemoLight(LightEntity):
         self._state = False
 
         # As we have disabled polling, we need to inform
-        # Home Assistant about updates in our state ourselves.
+        # KS Assistant about updates in our state ourselves.
         self.async_write_ha_state()

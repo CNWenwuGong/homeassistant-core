@@ -1,4 +1,4 @@
-"""API for Google Mail bound to Home Assistant OAuth."""
+"""API for Google Mail bound to KS Assistant OAuth."""
 
 from functools import partial
 

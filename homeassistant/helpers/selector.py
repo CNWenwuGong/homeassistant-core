@@ -1,4 +1,4 @@
-"""Selectors for Home Assistant."""
+"""Selectors for KS Assistant."""
 
 from __future__ import annotations
 

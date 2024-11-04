@@ -1,4 +1,4 @@
-"""Script to manage users for the Home Assistant auth provider."""
+"""Script to manage users for the KS Assistant auth provider."""
 
 import argparse
 import asyncio

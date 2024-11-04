@@ -130,7 +130,7 @@ async def async_setup_entry(
 class DemoWeather(WeatherEntity):
     """Representation of a weather condition."""
 
-    _attr_attribution = "Powered by Home Assistant"
+    _attr_attribution = "Powered by KS Assistant"
     _attr_should_poll = False
 
     def __init__(

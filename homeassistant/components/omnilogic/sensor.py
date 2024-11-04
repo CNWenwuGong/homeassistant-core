@@ -1,4 +1,4 @@
-"""Definition and setup of the Omnilogic Sensors for Home Assistant."""
+"""Definition and setup of the Omnilogic Sensors for KS Assistant."""
 
 from typing import Any
 

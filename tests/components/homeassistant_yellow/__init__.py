@@ -1,1 +1,1 @@
-"""Tests for the Home Assistant Yellow integration."""
+"""Tests for the KS Assistant Yellow integration."""

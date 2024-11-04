@@ -4,7 +4,7 @@
 # https://github.com/blog/2392-introducing-code-owners
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
-# Home Assistant Core
+# KS Assistant Core
 .core_files.yaml @home-assistant/core
 .git-blame-ignore-revs @home-assistant/core
 .gitattributes @home-assistant/core
@@ -27,7 +27,7 @@ requirements_test.txt @home-assistant/core
 /pylint/ @home-assistant/core
 /script/ @home-assistant/core
 
-# Home Assistant Supervisor
+# KS Assistant Supervisor
 .dockerignore @home-assistant/supervisor
 build.json @home-assistant/supervisor
 /machine/ @home-assistant/supervisor

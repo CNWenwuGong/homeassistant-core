@@ -123,7 +123,7 @@ class AppleTVConfigFlow(ConfigFlow, domain=DOMAIN):
     def device_identifier(self) -> str | None:
         """Return a identifier for the config entry.
 
-        A device has multiple unique identifiers, but Home Assistant only supports one
+        A device has multiple unique identifiers, but KS Assistant only supports one
         per config entry. Normally, a "main identifier" is determined by pyatv by
         first collecting all identifiers and then picking one in a pre-determine order.
         Under normal circumstances, this works fine but if a service is missing or
@@ -454,7 +454,7 @@ class AppleTVConfigFlow(ConfigFlow, domain=DOMAIN):
         # Protocol specific arguments
         pair_args: dict[str, Any] = {}
         if self.protocol in {Protocol.AirPlay, Protocol.Companion, Protocol.DMAP}:
-            pair_args["name"] = "Home Assistant"
+            pair_args["name"] = "KS Assistant"
         if self.protocol == Protocol.DMAP:
             pair_args["zeroconf"] = await zeroconf.async_get_instance(self.hass)
 

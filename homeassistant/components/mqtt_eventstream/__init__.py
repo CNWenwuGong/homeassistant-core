@@ -1,4 +1,4 @@
-"""Connect two Home Assistant instances via MQTT."""
+"""Connect two KS Assistant instances via MQTT."""
 
 import json
 import logging

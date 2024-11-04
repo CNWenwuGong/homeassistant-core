@@ -1,4 +1,4 @@
-"""API for NEW_NAME bound to Home Assistant OAuth."""
+"""API for NEW_NAME bound to KS Assistant OAuth."""
 
 from asyncio import run_coroutine_threadsafe
 
@@ -27,7 +27,7 @@ class ConfigEntryAuth(my_pypi_package.AbstractAuth):
         super().__init__(self.session.token)
 
     def refresh_tokens(self) -> str:
-        """Refresh and return new NEW_NAME tokens using Home Assistant OAuth2 session."""
+        """Refresh and return new NEW_NAME tokens using KS Assistant OAuth2 session."""
         run_coroutine_threadsafe(
             self.session.async_ensure_token_valid(), self.hass.loop
         ).result()

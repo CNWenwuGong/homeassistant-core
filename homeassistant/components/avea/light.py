@@ -68,7 +68,7 @@ class AveaLight(LightEntity):
     def update(self) -> None:
         """Fetch new state data for this light.
 
-        This is the only method that should fetch new data for Home Assistant.
+        This is the only method that should fetch new data for KS Assistant.
         """
         if (brightness := self._light.get_brightness()) is not None:
             self._attr_is_on = brightness != 0

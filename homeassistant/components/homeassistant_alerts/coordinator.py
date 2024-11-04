@@ -1,4 +1,4 @@
-"""Coordinator for the Home Assistant alerts integration."""
+"""Coordinator for the KS Assistant alerts integration."""
 
 import dataclasses
 import logging

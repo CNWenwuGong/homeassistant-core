@@ -1,4 +1,4 @@
-"""The tests for Home Assistant ffmpeg binary sensor."""
+"""The tests for KS Assistant ffmpeg binary sensor."""
 
 from unittest.mock import AsyncMock, patch
 

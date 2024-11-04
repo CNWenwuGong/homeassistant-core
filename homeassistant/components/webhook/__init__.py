@@ -1,4 +1,4 @@
-"""Webhooks for Home Assistant."""
+"""Webhooks for KS Assistant."""
 
 from __future__ import annotations
 

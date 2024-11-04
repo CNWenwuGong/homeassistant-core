@@ -1,4 +1,4 @@
-"""Test the Home Assistant analytics init module."""
+"""Test the KS Assistant analytics init module."""
 
 from __future__ import annotations
 

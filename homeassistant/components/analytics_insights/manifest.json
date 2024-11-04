@@ -1,6 +1,6 @@
 {
   "domain": "analytics_insights",
-  "name": "Home Assistant Analytics Insights",
+  "name": "KS Assistant Analytics Insights",
   "codeowners": ["@joostlek"],
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/analytics_insights",

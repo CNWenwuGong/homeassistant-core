@@ -310,7 +310,7 @@ class ADBDevice(AndroidTVEntity, MediaPlayerEntity):
 
     @adb_decorator()
     async def service_download(self, device_path: str, local_path: str) -> None:
-        """Download a file from your Android / Fire TV device to your Home Assistant instance."""
+        """Download a file from your Android / Fire TV device to your KS Assistant instance."""
         if not self.hass.config.is_allowed_path(local_path):
             _LOGGER.warning("'%s' is not secure to load data from!", local_path)
             return
@@ -319,7 +319,7 @@ class ADBDevice(AndroidTVEntity, MediaPlayerEntity):
 
     @adb_decorator()
     async def service_upload(self, device_path: str, local_path: str) -> None:
-        """Upload a file from your Home Assistant instance to an Android / Fire TV device."""
+        """Upload a file from your KS Assistant instance to an Android / Fire TV device."""
         if not self.hass.config.is_allowed_path(local_path):
             _LOGGER.warning("'%s' is not secure to load data from!", local_path)
             return

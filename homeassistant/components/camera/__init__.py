@@ -111,7 +111,7 @@ ATTR_FILENAME: Final = "filename"
 ATTR_MEDIA_PLAYER: Final = "media_player"
 ATTR_FORMAT: Final = "format"
 
-# These constants are deprecated as of Home Assistant 2024.10
+# These constants are deprecated as of KS Assistant 2024.10
 # Please use the StreamType enum instead.
 _DEPRECATED_STATE_RECORDING = DeprecatedConstantEnum(CameraState.RECORDING, "2025.10")
 _DEPRECATED_STATE_STREAMING = DeprecatedConstantEnum(CameraState.STREAMING, "2025.10")
@@ -125,7 +125,7 @@ class CameraEntityFeature(IntFlag):
     STREAM = 2
 
 
-# These SUPPORT_* constants are deprecated as of Home Assistant 2022.5.
+# These SUPPORT_* constants are deprecated as of KS Assistant 2022.5.
 # Pleease use the CameraEntityFeature enum instead.
 _DEPRECATED_SUPPORT_ON_OFF: Final = DeprecatedConstantEnum(
     CameraEntityFeature.ON_OFF, "2025.1"

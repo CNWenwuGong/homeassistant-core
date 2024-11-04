@@ -1,4 +1,4 @@
-"""Start Home Assistant."""
+"""Start KS Assistant."""
 
 from __future__ import annotations
 
@@ -15,10 +15,10 @@ FAULT_LOG_FILENAME = "home-assistant.log.fault"
 
 
 def validate_os() -> None:
-    """Validate that Home Assistant is running in a supported operating system."""
+    """Validate that KS Assistant is running in a supported operating system."""
     if not sys.platform.startswith(("darwin", "linux")):
         print(
-            "Home Assistant only supports Linux, OSX and Windows using WSL",
+            "KS Assistant only supports Linux, OSX and Windows using WSL",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -28,7 +28,7 @@ def validate_python() -> None:
     """Validate that the right Python version is running."""
     if sys.version_info[:3] < REQUIRED_PYTHON_VER:
         print(
-            "Home Assistant requires at least Python "
+            "KS Assistant requires at least Python "
             f"{REQUIRED_PYTHON_VER[0]}.{REQUIRED_PYTHON_VER[1]}.{REQUIRED_PYTHON_VER[2]}",
             file=sys.stderr,
         )
@@ -83,7 +83,7 @@ def get_arguments() -> argparse.Namespace:
     from . import config as config_util
 
     parser = argparse.ArgumentParser(
-        description="Home Assistant: Observe, Control, Automate.",
+        description="KS Assistant: Observe, Control, Automate.",
         epilog=f"If restart is requested, exits with code {RESTART_EXIT_CODE}",
     )
     parser.add_argument("--version", action="version", version=__version__)
@@ -92,15 +92,15 @@ def get_arguments() -> argparse.Namespace:
         "--config",
         metavar="path_to_config_dir",
         default=config_util.get_default_config_dir(),
-        help="Directory that contains the Home Assistant configuration",
+        help="Directory that contains the KS Assistant configuration",
     )
     parser.add_argument(
         "--recovery-mode",
         action="store_true",
-        help="Start Home Assistant in recovery mode",
+        help="Start KS Assistant in recovery mode",
     )
     parser.add_argument(
-        "--debug", action="store_true", help="Start Home Assistant in debug mode"
+        "--debug", action="store_true", help="Start KS Assistant in debug mode"
     )
     parser.add_argument(
         "--open-ui", action="store_true", help="Open the webinterface in a browser"
@@ -167,7 +167,7 @@ def check_threads() -> None:
 
 
 def main() -> int:
-    """Start Home Assistant."""
+    """Start KS Assistant."""
     validate_python()
 
     args = get_arguments()

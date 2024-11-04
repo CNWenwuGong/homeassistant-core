@@ -1,4 +1,4 @@
-"""Config flow for the Home Assistant Green integration."""
+"""Config flow for the KS Assistant Green integration."""
 
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ STEP_HW_SETTINGS_SCHEMA = vol.Schema(
 
 
 class HomeAssistantGreenConfigFlow(ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for Home Assistant Green."""
+    """Handle a config flow for KS Assistant Green."""
 
     VERSION = 1
 
@@ -55,11 +55,11 @@ class HomeAssistantGreenConfigFlow(ConfigFlow, domain=DOMAIN):
         self, data: dict[str, Any] | None = None
     ) -> ConfigFlowResult:
         """Handle the initial step."""
-        return self.async_create_entry(title="Home Assistant Green", data={})
+        return self.async_create_entry(title="KS Assistant Green", data={})
 
 
 class HomeAssistantGreenOptionsFlow(OptionsFlow):
-    """Handle an option flow for Home Assistant Green."""
+    """Handle an option flow for KS Assistant Green."""
 
     _hw_settings: dict[str, bool] | None = None
 

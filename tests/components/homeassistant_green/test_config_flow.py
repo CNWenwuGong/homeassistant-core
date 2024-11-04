@@ -1,4 +1,4 @@
-"""Test the Home Assistant Green config flow."""
+"""Test the KS Assistant Green config flow."""
 
 from unittest.mock import patch
 
@@ -50,7 +50,7 @@ async def test_config_flow(hass: HomeAssistant) -> None:
         )
 
     assert result["type"] is FlowResultType.CREATE_ENTRY
-    assert result["title"] == "Home Assistant Green"
+    assert result["title"] == "KS Assistant Green"
     assert result["data"] == {}
     assert result["options"] == {}
     assert len(mock_setup_entry.mock_calls) == 1
@@ -58,7 +58,7 @@ async def test_config_flow(hass: HomeAssistant) -> None:
     config_entry = hass.config_entries.async_entries(DOMAIN)[0]
     assert config_entry.data == {}
     assert config_entry.options == {}
-    assert config_entry.title == "Home Assistant Green"
+    assert config_entry.title == "KS Assistant Green"
 
 
 async def test_config_flow_single_entry(hass: HomeAssistant) -> None:
@@ -71,7 +71,7 @@ async def test_config_flow_single_entry(hass: HomeAssistant) -> None:
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
 
@@ -99,7 +99,7 @@ async def test_option_flow_non_hassio(
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
 
@@ -127,7 +127,7 @@ async def test_option_flow_led_settings(
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
 
@@ -159,7 +159,7 @@ async def test_option_flow_led_settings_unchanged(
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
 
@@ -185,7 +185,7 @@ async def test_option_flow_led_settings_fail_1(hass: HomeAssistant) -> None:
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
 
@@ -211,7 +211,7 @@ async def test_option_flow_led_settings_fail_2(
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
 

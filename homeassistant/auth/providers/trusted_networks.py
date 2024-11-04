@@ -200,7 +200,7 @@ class TrustedNetworksAuthProvider(AuthProvider):
             raise InvalidAuthError("Can't allow access from a proxy server")
 
         if is_cloud_connection(self.hass):
-            raise InvalidAuthError("Can't allow access from Home Assistant Cloud")
+            raise InvalidAuthError("Can't allow access from KS Assistant Cloud")
 
     @callback
     def async_validate_refresh_token(

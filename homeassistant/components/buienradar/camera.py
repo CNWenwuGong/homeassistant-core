@@ -142,7 +142,7 @@ class BuienradarCam(Camera):
 
         Uses asyncio conditions to make sure only one task enters the critical
         section at the same time. Otherwise, two http requests would start
-        when two tabs with Home Assistant are open.
+        when two tabs with KS Assistant are open.
 
         The condition is entered in two sections because otherwise the lock
         would be held while doing the http request.

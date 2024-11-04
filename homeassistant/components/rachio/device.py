@@ -1,4 +1,4 @@
-"""Adapter to wrap the rachiopy api for home assistant."""
+"""Adapter to wrap the rachiopy api for KS Assistant."""
 
 from __future__ import annotations
 

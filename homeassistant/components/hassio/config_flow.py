@@ -1,4 +1,4 @@
-"""Config flow for Home Assistant Supervisor integration."""
+"""Config flow for KS Assistant Supervisor integration."""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from .const import DOMAIN
 
 
 class HassIoConfigFlow(ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for Home Assistant Supervisor."""
+    """Handle a config flow for KS Assistant Supervisor."""
 
     VERSION = 1
 

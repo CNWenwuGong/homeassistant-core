@@ -321,7 +321,7 @@ class Analytics:
                 if response.status == 200:
                     LOGGER.info(
                         (
-                            "Submitted analytics to Home Assistant servers. "
+                            "Submitted analytics to KS Assistant servers. "
                             "Information submitted includes %s"
                         ),
                         payload,

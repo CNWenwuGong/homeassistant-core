@@ -231,7 +231,7 @@ class ConfiguredDoorBird:
             return False
 
         if not await self.device.change_favorite(
-            HTTP_EVENT_TYPE, f"Home Assistant ({event})", url
+            HTTP_EVENT_TYPE, f"KS Assistant ({event})", url
         ):
             _LOGGER.warning(
                 'Unable to set favorite URL "%s". Event "%s" will not fire',

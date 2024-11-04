@@ -683,7 +683,7 @@ class DlnaDmrEntity(MediaPlayerEntity):
         metadata: dict[str, Any] = extra.get("metadata") or {}
 
         if not title:
-            title = extra.get("title") or metadata.get("title") or "Home Assistant"
+            title = extra.get("title") or metadata.get("title") or "KS Assistant"
         if thumb := extra.get("thumb"):
             metadata["album_art_uri"] = thumb
 

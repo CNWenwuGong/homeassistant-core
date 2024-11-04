@@ -7,7 +7,7 @@
       },
       "station": {
         "title": "Select station",
-        "description": "Select the weather station you want to add to Home Assistant.",
+        "description": "Select the weather station you want to add to KS Assistant.",
         "data": {
           "station": "Station"
         }

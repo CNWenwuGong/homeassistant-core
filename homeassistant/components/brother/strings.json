@@ -12,7 +12,7 @@
         }
       },
       "zeroconf_confirm": {
-        "description": "Do you want to add the printer {model} with serial number `{serial_number}` to Home Assistant?",
+        "description": "Do you want to add the printer {model} with serial number `{serial_number}` to KS Assistant?",
         "title": "Discovered Brother Printer",
         "data": {
           "type": "[%key:component::brother::config::step::user::data::type%]"

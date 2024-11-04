@@ -1,4 +1,4 @@
-"""Test to verify that Home Assistant core works."""
+"""Test to verify that KS Assistant core works."""
 
 from __future__ import annotations
 
@@ -2096,7 +2096,7 @@ async def test_start_taking_too_long(caplog: pytest.LogCaptureFixture) -> None:
             await hass.async_start()
 
         assert hass.state == ha.CoreState.running
-        assert "Something is blocking Home Assistant" in caplog.text
+        assert "Something is blocking KS Assistant" in caplog.text
 
     finally:
         await hass.async_stop()
@@ -2347,7 +2347,7 @@ async def test_incorrect_internal_external_url(
 
 
 async def test_start_events(hass: HomeAssistant) -> None:
-    """Test events fired when starting Home Assistant."""
+    """Test events fired when starting KS Assistant."""
     hass.state = ha.CoreState.not_running
 
     all_events = []
@@ -3099,7 +3099,7 @@ async def test_validate_state(hass: HomeAssistant) -> None:
 async def test_get_release_channel(
     version: str, release_channel: ReleaseChannel
 ) -> None:
-    """Test if release channel detection works from Home Assistant version number."""
+    """Test if release channel detection works from KS Assistant version number."""
     with patch("homeassistant.core.__version__", f"{version}"):
         assert get_release_channel() == release_channel
 
@@ -3253,7 +3253,7 @@ async def test_async_run_job_deprecated(
     hass.async_run_job(_test)
     assert (
         "Detected code that calls `async_run_job`, which is deprecated "
-        "and will be removed in Home Assistant 2025.4; Please review "
+        "and will be removed in KS Assistant 2025.4; Please review "
         "https://developers.home-assistant.io/blog/2024/03/13/deprecate_add_run_job"
         " for replacement options"
     ) in caplog.text
@@ -3270,7 +3270,7 @@ async def test_async_add_job_deprecated(
     hass.async_add_job(_test)
     assert (
         "Detected code that calls `async_add_job`, which is deprecated "
-        "and will be removed in Home Assistant 2025.4; Please review "
+        "and will be removed in KS Assistant 2025.4; Please review "
         "https://developers.home-assistant.io/blog/2024/03/13/deprecate_add_run_job"
         " for replacement options"
     ) in caplog.text
@@ -3287,7 +3287,7 @@ async def test_async_add_hass_job_deprecated(
     hass.async_add_hass_job(HassJob(_test))
     assert (
         "Detected code that calls `async_add_hass_job`, which is deprecated "
-        "and will be removed in Home Assistant 2025.5; Please review "
+        "and will be removed in KS Assistant 2025.5; Please review "
         "https://developers.home-assistant.io/blog/2024/04/07/deprecate_add_hass_job"
         " for replacement options"
     ) in caplog.text
@@ -3458,7 +3458,7 @@ async def test_async_listen_with_run_immediately_deprecated(
     func(EVENT_HOMEASSISTANT_START, _test, run_immediately=run_immediately)
     assert (
         f"Detected code that calls `{method}` with run_immediately, which is "
-        "deprecated and will be removed in Home Assistant 2025.5."
+        "deprecated and will be removed in KS Assistant 2025.5."
     ) in caplog.text
 
 
@@ -3541,7 +3541,7 @@ async def test_thread_safety_message(hass: HomeAssistant) -> None:
         RuntimeError,
         match=re.escape(
             "Detected code that calls test from a thread other than the event loop, "
-            "which may cause Home Assistant to crash or data to corrupt. For more "
+            "which may cause KS Assistant to crash or data to corrupt. For more "
             "information, see "
             "https://developers.home-assistant.io/docs/asyncio_thread_safety/#test"
             ". Please report this issue.",
@@ -3556,7 +3556,7 @@ async def test_set_time_zone_deprecated(hass: HomeAssistant) -> None:
         RuntimeError,
         match=re.escape(
             "Detected code that set the time zone using set_time_zone instead of "
-            "async_set_time_zone which will stop working in Home Assistant 2025.6. "
+            "async_set_time_zone which will stop working in KS Assistant 2025.6. "
             "Please report this issue.",
         ),
     ):

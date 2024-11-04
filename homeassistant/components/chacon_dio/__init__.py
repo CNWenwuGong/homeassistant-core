@@ -58,7 +58,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ChaconDioConfigEntry) ->
 
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
 
-    # Disconnect the permanent websocket connection of home assistant on shutdown
+    # Disconnect the permanent websocket connection of KS Assistant on shutdown
     async def _async_disconnect_websocket(_: Event) -> None:
         await client.disconnect()
 

@@ -1,4 +1,4 @@
-"""Test fixtures for the Home Assistant Hardware integration."""
+"""Test fixtures for the KS Assistant Hardware integration."""
 
 from collections.abc import Generator
 from typing import Any

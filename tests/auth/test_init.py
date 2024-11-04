@@ -1,4 +1,4 @@
-"""Tests for the Home Assistant auth module."""
+"""Tests for the KS Assistant auth module."""
 
 from datetime import timedelta
 import time
@@ -35,7 +35,7 @@ from tests.common import (
 
 @pytest.fixture
 def mock_hass(hass: HomeAssistant) -> HomeAssistant:
-    """Home Assistant mock with minimum amount of data set to make it work with auth."""
+    """KS Assistant mock with minimum amount of data set to make it work with auth."""
     return hass
 
 

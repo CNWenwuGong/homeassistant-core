@@ -1,4 +1,4 @@
-"""Test Home Assistant language util methods."""
+"""Test KS Assistant language util methods."""
 
 from __future__ import annotations
 

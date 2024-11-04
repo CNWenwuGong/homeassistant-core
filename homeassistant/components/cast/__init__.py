@@ -81,7 +81,7 @@ def _register_cast_platform(
 
 
 async def async_remove_entry(hass: HomeAssistant, entry: ConfigEntry) -> None:
-    """Remove Home Assistant Cast user."""
+    """Remove KS Assistant Cast user."""
     await home_assistant_cast.async_remove_user(hass, entry)
 
 

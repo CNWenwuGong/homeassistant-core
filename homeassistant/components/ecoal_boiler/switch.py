@@ -50,7 +50,7 @@ class EcoalSwitch(SwitchEntity):
     def update(self) -> None:
         """Fetch new state data for the sensor.
 
-        This is the only method that should fetch new data for Home Assistant.
+        This is the only method that should fetch new data for KS Assistant.
         """
         status = self._ecoal_contr.get_cached_status()
         self._attr_is_on = getattr(status, self._state_attr)

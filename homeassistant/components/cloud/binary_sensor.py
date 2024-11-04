@@ -1,4 +1,4 @@
-"""Support for Home Assistant Cloud binary sensors."""
+"""Support for KS Assistant Cloud binary sensors."""
 
 from __future__ import annotations
 
@@ -28,7 +28,7 @@ async def async_setup_entry(
     config_entry: ConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
-    """Set up the Home Assistant Cloud binary sensors."""
+    """Set up the KS Assistant Cloud binary sensors."""
     cloud = hass.data[DATA_CLOUD]
     async_add_entities([CloudRemoteBinary(cloud)])
 

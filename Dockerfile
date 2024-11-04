@@ -15,25 +15,41 @@ ARG QEMU_CPU
 RUN pip3 install uv==0.4.17
 
 WORKDIR /usr/src
+ENV UV_HTTP_TIMEOUT=3000
+ENV HTTP_TIMEOUT=3000
 
-## Setup Home Assistant Core dependencies
+#RUN uv pip install fnvhash==0.1.0
+#RUN uv pip install pyric==0.1.6.3
+#RUN uv pip install progettihwsw==0.1.3
+
+## Setup KS Assistant Core dependencies
 COPY requirements.txt homeassistant/
 COPY homeassistant/package_constraints.txt homeassistant/homeassistant/
 RUN \
-    uv pip install \
+    uv pip install -e true\
         --no-build \
+        --upgrade \
         -r homeassistant/requirements.txt
 
-COPY requirements_all.txt home_assistant_frontend-* home_assistant_intents-* homeassistant/
+COPY requirements_all.txt ks_assistant_frontend-* home_assistant_intents-* homeassistant/
+#RUN uv pip install pyfronius==0.7.3
+#RUN uv pip install pyqrcode==1.2.1
+#RUN uv pip install pysyncthru==0.7.10
+#RUN uv pip install pyturbojpeg==1.7.5
+
 RUN \
     if ls homeassistant/home_assistant_*.whl 1> /dev/null 2>&1; then \
         uv pip install homeassistant/home_assistant_*.whl; \
     fi \
+    && if ls homeassistant/ks_assistant_*.whl 1> /dev/null 2>&1; then \
+        uv pip install homeassistant/ks_assistant_*.whl; \
+    fi \
     && uv pip install \
         --no-build \
+        --upgrade \
         -r homeassistant/requirements_all.txt
 
-## Setup Home Assistant Core
+## Setup KS Assistant Core
 COPY . homeassistant/
 RUN \
     uv pip install \
@@ -41,7 +57,7 @@ RUN \
     && python3 -m compileall \
         homeassistant/homeassistant
 
-# Home Assistant S6-Overlay
+# KS Assistant S6-Overlay
 COPY rootfs /
 
 # Needs to be redefined inside the FROM statement to be set for RUN commands

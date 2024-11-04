@@ -1,4 +1,4 @@
-"""Component to integrate the Home Assistant cloud."""
+"""Component to integrate the KS Assistant cloud."""
 
 from __future__ import annotations
 
@@ -239,7 +239,7 @@ def async_remote_ui_url(hass: HomeAssistant) -> str:
 
 
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
-    """Initialize the Home Assistant cloud."""
+    """Initialize the KS Assistant cloud."""
     # Process configs
     if DOMAIN in config:
         kwargs = dict(config[DOMAIN])

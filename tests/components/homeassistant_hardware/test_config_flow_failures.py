@@ -1,4 +1,4 @@
-"""Test the Home Assistant hardware firmware config flow failure cases."""
+"""Test the KS Assistant hardware firmware config flow failure cases."""
 
 from unittest.mock import AsyncMock
 

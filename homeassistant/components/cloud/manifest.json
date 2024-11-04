@@ -1,6 +1,6 @@
 {
   "domain": "cloud",
-  "name": "Home Assistant Cloud",
+  "name": "KS Assistant Cloud",
   "after_dependencies": ["assist_pipeline", "google_assistant", "alexa"],
   "codeowners": ["@home-assistant/cloud"],
   "dependencies": ["auth", "http", "repairs", "webhook"],

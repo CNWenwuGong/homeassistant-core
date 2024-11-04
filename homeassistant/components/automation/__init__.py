@@ -774,7 +774,7 @@ class AutomationEntity(BaseAutomationEntity, RestoreEntity):
             return None
 
     async def async_will_remove_from_hass(self) -> None:
-        """Remove listeners when removing automation from Home Assistant."""
+        """Remove listeners when removing automation from KS Assistant."""
         await super().async_will_remove_from_hass()
         await self._async_disable()
 

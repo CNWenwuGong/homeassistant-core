@@ -1,1 +1,1 @@
-"""Tests for the Home Assistant auth module."""
+"""Tests for the KS Assistant auth module."""

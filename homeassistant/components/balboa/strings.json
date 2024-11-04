@@ -23,7 +23,7 @@
     "step": {
       "init": {
         "data": {
-          "sync_time": "Keep your Balboa spa's time synchronized with Home Assistant"
+          "sync_time": "Keep your Balboa spa's time synchronized with KS Assistant"
         }
       }
     }

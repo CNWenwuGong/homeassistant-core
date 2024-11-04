@@ -1,4 +1,4 @@
-"""Test Home Assistant remote methods and classes."""
+"""Test KS Assistant remote methods and classes."""
 
 import datetime
 from functools import partial

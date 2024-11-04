@@ -1,4 +1,4 @@
-"""The tests for the Home Assistant HTTP component."""
+"""The tests for the KS Assistant HTTP component."""
 
 from http import HTTPStatus
 from ipaddress import ip_address

@@ -30,7 +30,7 @@ SIGNAL_CAST_DISCOVERED: SignalType[ChromecastInfo] = SignalType("cast_discovered
 # removed
 SIGNAL_CAST_REMOVED: SignalType[ChromecastInfo] = SignalType("cast_removed")
 
-# Dispatcher signal fired when a Chromecast should show a Home Assistant Cast view.
+# Dispatcher signal fired when a Chromecast should show a KS Assistant Cast view.
 SIGNAL_HASS_CAST_SHOW_VIEW: SignalType[
     HomeAssistantControllerData, str, str, str | None
 ] = SignalType("cast_show_view")

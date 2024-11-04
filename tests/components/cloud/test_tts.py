@@ -436,9 +436,7 @@ async def test_migrating_pipelines(
         == "01GX8ZWBAQYWNB1XV3EXEZ75DY"
     )
     assert hass_storage[STORAGE_KEY]["data"]["items"][0]["language"] == "language_1"
-    assert (
-        hass_storage[STORAGE_KEY]["data"]["items"][0]["name"] == "Home Assistant Cloud"
-    )
+    assert hass_storage[STORAGE_KEY]["data"]["items"][0]["name"] == "KS Assistant Cloud"
     assert hass_storage[STORAGE_KEY]["data"]["items"][0]["stt_language"] == "language_1"
     assert hass_storage[STORAGE_KEY]["data"]["items"][0]["tts_language"] == "language_1"
     assert (
@@ -701,7 +699,7 @@ async def test_deprecated_gender(
     assert issue.severity == ir.IssueSeverity.WARNING
     assert issue.translation_key == "deprecated_gender"
     assert issue.translation_placeholders == {
-        "integration_name": "Home Assistant Cloud",
+        "integration_name": "KS Assistant Cloud",
         "deprecated_option": "gender",
         "replacement_option": "voice",
     }
@@ -723,7 +721,7 @@ async def test_deprecated_gender(
         "data_schema": [],
         "errors": None,
         "description_placeholders": {
-            "integration_name": "Home Assistant Cloud",
+            "integration_name": "KS Assistant Cloud",
             "deprecated_option": "gender",
             "replacement_option": "voice",
         },

@@ -85,7 +85,7 @@ class AlexaIntentsView(http.HomeAssistantView):
                 intent_error_response(
                     hass,
                     message,
-                    "This intent is not yet configured within Home Assistant.",
+                    "This intent is not yet configured within KS Assistant.",
                 )
             )
 

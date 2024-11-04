@@ -1,4 +1,4 @@
-"""The Home Assistant Green hardware platform."""
+"""The KS Assistant Green hardware platform."""
 
 from __future__ import annotations
 

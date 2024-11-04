@@ -1,4 +1,4 @@
-"""Test Home Assistant thread utils."""
+"""Test KS Assistant thread utils."""
 
 import asyncio
 from unittest.mock import Mock, patch

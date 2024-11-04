@@ -1,4 +1,4 @@
-"""Tuya Home Assistant Base Device Model."""
+"""Tuya KS Assistant Base Device Model."""
 
 from __future__ import annotations
 

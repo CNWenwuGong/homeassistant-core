@@ -8,7 +8,7 @@
     "flow_title": "{host}",
     "step": {
       "confirm": {
-        "description": "Do you want to add Arcam FMJ on `{host}` to Home Assistant?"
+        "description": "Do you want to add Arcam FMJ on `{host}` to KS Assistant?"
       },
       "user": {
         "data": {

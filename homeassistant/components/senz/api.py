@@ -1,4 +1,4 @@
-"""API for nVent RAYCHEM SENZ bound to Home Assistant OAuth."""
+"""API for nVent RAYCHEM SENZ bound to KS Assistant OAuth."""
 
 from typing import cast
 

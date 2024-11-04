@@ -1,4 +1,4 @@
-"""Config flow for the Home Assistant SkyConnect integration."""
+"""Config flow for the KS Assistant SkyConnect integration."""
 
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ else:
 
 
 class SkyConnectTranslationMixin(ConfigEntryBaseFlow, TranslationPlaceholderProtocol):
-    """Translation placeholder mixin for Home Assistant SkyConnect."""
+    """Translation placeholder mixin for KS Assistant SkyConnect."""
 
     context: ConfigFlowContext
 
@@ -61,7 +61,7 @@ class HomeAssistantSkyConnectConfigFlow(
     firmware_config_flow.BaseFirmwareConfigFlow,
     domain=DOMAIN,
 ):
-    """Handle a config flow for Home Assistant SkyConnect."""
+    """Handle a config flow for KS Assistant SkyConnect."""
 
     VERSION = 1
     MINOR_VERSION = 2
@@ -140,7 +140,7 @@ class HomeAssistantSkyConnectConfigFlow(
 class HomeAssistantSkyConnectMultiPanOptionsFlowHandler(
     silabs_multiprotocol_addon.OptionsFlowHandler
 ):
-    """Multi-PAN options flow for Home Assistant SkyConnect."""
+    """Multi-PAN options flow for KS Assistant SkyConnect."""
 
     async def _async_serial_port_settings(
         self,

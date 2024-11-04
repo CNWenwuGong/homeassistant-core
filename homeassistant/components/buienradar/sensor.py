@@ -704,7 +704,7 @@ async def async_setup_entry(
     )
 
     if None in (latitude, longitude):
-        _LOGGER.error("Latitude or longitude not set in Home Assistant config")
+        _LOGGER.error("Latitude or longitude not set in KS Assistant config")
         return
 
     coordinates = {CONF_LATITUDE: float(latitude), CONF_LONGITUDE: float(longitude)}

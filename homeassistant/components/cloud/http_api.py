@@ -59,7 +59,7 @@ _LOGGER = logging.getLogger(__name__)
 _CLOUD_ERRORS: dict[type[Exception], tuple[HTTPStatus, str]] = {
     TimeoutError: (
         HTTPStatus.BAD_GATEWAY,
-        "Unable to reach the Home Assistant cloud.",
+        "Unable to reach the KS Assistant Cloud.",
     ),
     aiohttp.ClientError: (
         HTTPStatus.INTERNAL_SERVER_ERROR,
@@ -203,7 +203,7 @@ class GoogleActionsSyncView(HomeAssistantView):
 
 
 class CloudLoginView(HomeAssistantView):
-    """Login to Home Assistant cloud."""
+    """Login to KS Assistant Cloud."""
 
     url = "/api/cloud/login"
     name = "api:cloud:login"
@@ -227,7 +227,7 @@ class CloudLoginView(HomeAssistantView):
 
 
 class CloudLogoutView(HomeAssistantView):
-    """Log out of the Home Assistant cloud."""
+    """Log out of the KS Assistant Cloud."""
 
     url = "/api/cloud/logout"
     name = "api:cloud:logout"
@@ -246,7 +246,7 @@ class CloudLogoutView(HomeAssistantView):
 
 
 class CloudRegisterView(HomeAssistantView):
-    """Register on the Home Assistant cloud."""
+    """Register on the KS Assistant Cloud."""
 
     url = "/api/cloud/register"
     name = "api:cloud:register"
@@ -479,7 +479,7 @@ async def websocket_update_prefs(
                 msg["id"],
                 "alexa_relink",
                 (
-                    "Please go to the Alexa app and re-link the Home Assistant "
+                    "Please go to the Alexa app and re-link the KS Assistant "
                     "skill and then try to enable state reporting."
                 ),
             )
@@ -810,7 +810,7 @@ async def alexa_sync(
             connection.send_error(
                 msg["id"],
                 "alexa_relink",
-                "Please go to the Alexa app and re-link the Home Assistant skill.",
+                "Please go to the Alexa app and re-link the KS Assistant skill.",
             )
             return
 

@@ -175,7 +175,7 @@ class CloudGoogleConfig(AbstractConfig):
         return self._prefs.google_local_webhook_id
 
     def get_local_user_id(self, webhook_id: Any) -> str:
-        """Map webhook ID to a Home Assistant user ID.
+        """Map webhook ID to a KS Assistant user ID.
 
         Any action initiated by Google Assistant via the local SDK will be attributed
         to the returned user ID.

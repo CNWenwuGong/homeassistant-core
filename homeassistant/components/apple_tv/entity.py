@@ -31,7 +31,7 @@ class AppleTVEntity(Entity):
         )
 
     async def async_added_to_hass(self) -> None:
-        """Handle when an entity is about to be added to Home Assistant."""
+        """Handle when an entity is about to be added to KS Assistant."""
 
         @callback
         def _async_connected(atv: AppleTVInterface) -> None:

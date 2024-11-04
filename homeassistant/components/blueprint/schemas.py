@@ -29,7 +29,7 @@ from .const import (
 
 
 def version_validator(value: Any) -> str:
-    """Validate a Home Assistant version."""
+    """Validate a KS Assistant version."""
     if not isinstance(value, str):
         raise vol.Invalid("Version needs to be a string")
 

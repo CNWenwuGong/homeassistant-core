@@ -64,7 +64,7 @@ async def async_create_cloud_pipeline(hass: HomeAssistant) -> str | None:
             hass,
             stt_engine_id=new_stt_engine_id,
             tts_engine_id=new_tts_engine_id,
-            pipeline_name="Home Assistant Cloud",
+            pipeline_name="KS Assistant Cloud",
         )
     ) is None:
         return None

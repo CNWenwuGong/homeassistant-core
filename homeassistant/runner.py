@@ -1,4 +1,4 @@
-"""Run Home Assistant."""
+"""Run KS Assistant."""
 
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ _LOGGER = logging.getLogger(__name__)
 
 @dataclasses.dataclass(slots=True)
 class RuntimeConfig:
-    """Class to hold the information for running Home Assistant."""
+    """Class to hold the information for running KS Assistant."""
 
     config_dir: str
     skip_pip: bool = False
@@ -75,7 +75,7 @@ def can_use_pidfd() -> bool:
 
 
 class HassEventLoopPolicy(asyncio.DefaultEventLoopPolicy):
-    """Event loop policy for Home Assistant."""
+    """Event loop policy for KS Assistant."""
 
     def __init__(self, debug: bool) -> None:
         """Init the event loop policy."""
@@ -153,7 +153,7 @@ def _async_loop_exception_handler(_: Any, context: dict[str, Any]) -> None:
 
 
 async def setup_and_run_hass(runtime_config: RuntimeConfig) -> int:
-    """Set up Home Assistant and run."""
+    """Set up KS Assistant and run."""
     hass = await bootstrap.async_setup_hass(runtime_config)
 
     if hass is None:
@@ -179,7 +179,7 @@ def _enable_posix_spawn() -> None:
 
 
 def run(runtime_config: RuntimeConfig) -> int:
-    """Run Home Assistant."""
+    """Run KS Assistant."""
     _enable_posix_spawn()
     asyncio.set_event_loop_policy(HassEventLoopPolicy(runtime_config.debug))
     # Backport of cpython 3.9 asyncio.run with a _cancel_all_tasks that times out

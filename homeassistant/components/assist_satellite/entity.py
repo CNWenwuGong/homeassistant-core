@@ -45,10 +45,10 @@ class AssistSatelliteState(StrEnum):
     """Device is waiting for user input, such as a wake word or a button press."""
 
     LISTENING = "listening"
-    """Device is streaming audio with the voice command to Home Assistant."""
+    """Device is streaming audio with the voice command to KS Assistant."""
 
     PROCESSING = "processing"
-    """Home Assistant is processing the voice command."""
+    """KS Assistant is processing the voice command."""
 
     RESPONDING = "responding"
     """Device is speaking the response."""
@@ -258,7 +258,7 @@ class AssistSatelliteEntity(entity.Entity):
         end_stage: PipelineStage = PipelineStage.TTS,
         wake_word_phrase: str | None = None,
     ) -> None:
-        """Triggers an Assist pipeline in Home Assistant from a satellite."""
+        """Triggers an Assist pipeline in KS Assistant from a satellite."""
         await self._cancel_running_pipeline()
 
         if self._wake_word_intercept_future and start_stage in (

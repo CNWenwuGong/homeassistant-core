@@ -1,4 +1,4 @@
-"""Test Home Assistant template helper methods."""
+"""Test KS Assistant template helper methods."""
 
 from __future__ import annotations
 
@@ -1661,19 +1661,19 @@ def test_base64_decode(hass: HomeAssistant) -> None:
 def test_slugify(hass: HomeAssistant) -> None:
     """Test the slugify filter."""
     assert (
-        template.Template('{{ slugify("Home Assistant") }}', hass).async_render()
+        template.Template('{{ slugify("KS Assistant") }}', hass).async_render()
         == "home_assistant"
     )
     assert (
-        template.Template('{{ "Home Assistant" | slugify }}', hass).async_render()
+        template.Template('{{ "KS Assistant" | slugify }}', hass).async_render()
         == "home_assistant"
     )
     assert (
-        template.Template('{{ slugify("Home Assistant", "-") }}', hass).async_render()
+        template.Template('{{ slugify("KS Assistant", "-") }}', hass).async_render()
         == "home-assistant"
     )
     assert (
-        template.Template('{{ "Home Assistant" | slugify("-") }}', hass).async_render()
+        template.Template('{{ "KS Assistant" | slugify("-") }}', hass).async_render()
         == "home-assistant"
     )
 
@@ -2844,7 +2844,7 @@ def test_regex_match(hass: HomeAssistant) -> None:
 
     tpl = template.Template(
         """
-{{ 'Home Assistant test' | regex_match('home', True) }}
+{{ 'KS Assistant test' | regex_match('home', True) }}
             """,
         hass,
     )
@@ -2852,7 +2852,7 @@ def test_regex_match(hass: HomeAssistant) -> None:
 
     tpl = template.Template(
         """
-    {{ 'Another Home Assistant test' | regex_match('Home') }}
+    {{ 'Another KS Assistant test' | regex_match('Home') }}
                     """,
         hass,
     )
@@ -2860,7 +2860,7 @@ def test_regex_match(hass: HomeAssistant) -> None:
 
     tpl = template.Template(
         """
-{{ ['Home Assistant test'] | regex_match('.*Assist') }}
+{{ ['KS Assistant test'] | regex_match('.*Assist') }}
             """,
         hass,
     )
@@ -2890,7 +2890,7 @@ def test_regex_search(hass: HomeAssistant) -> None:
 
     tpl = template.Template(
         """
-{{ 'Home Assistant test' | regex_search('home', True) }}
+{{ 'KS Assistant test' | regex_search('home', True) }}
             """,
         hass,
     )
@@ -2898,7 +2898,7 @@ def test_regex_search(hass: HomeAssistant) -> None:
 
     tpl = template.Template(
         """
-    {{ 'Another Home Assistant test' | regex_search('Home') }}
+    {{ 'Another KS Assistant test' | regex_search('Home') }}
                     """,
         hass,
     )
@@ -2906,7 +2906,7 @@ def test_regex_search(hass: HomeAssistant) -> None:
 
     tpl = template.Template(
         """
-{{ ['Home Assistant test'] | regex_search('Assist') }}
+{{ ['KS Assistant test'] | regex_search('Assist') }}
             """,
         hass,
     )
@@ -2940,7 +2940,7 @@ def test_regex_replace(hass: HomeAssistant) -> None:
             """,
         hass,
     )
-    assert tpl.async_render() == ["Home Assistant test"]
+    assert tpl.async_render() == ["KS Assistant test"]
 
 
 def test_regex_findall(hass: HomeAssistant) -> None:

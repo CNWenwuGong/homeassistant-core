@@ -32,7 +32,7 @@ async def async_get_config_entry_diagnostics(
         "device_class": aftv.DEVICE_CLASS,
     }
 
-    # Gather information how this AndroidTV device is represented in Home Assistant
+    # Gather information how this AndroidTV device is represented in KS Assistant
     device_registry = dr.async_get(hass)
     entity_registry = er.async_get(hass)
     hass_device = device_registry.async_get_device(

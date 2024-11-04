@@ -2,7 +2,7 @@
   "services": {
     "browse_url": {
       "name": "Browse",
-      "description": "Opens a URL in the default browser on the host machine of Home Assistant.",
+      "description": "Opens a URL in the default browser on the host machine of KS Assistant.",
       "fields": {
         "url": {
           "name": "[%key:common::config_flow::data::url%]",

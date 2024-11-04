@@ -1,4 +1,4 @@
-"""Decorators for the Home Assistant API."""
+"""Decorators for the KS Assistant API."""
 
 from __future__ import annotations
 
@@ -59,7 +59,7 @@ def require_admin[
     ]
     | _FuncType[_HomeAssistantViewT, _P, _ResponseT]
 ):
-    """Home Assistant API decorator to require user to be an admin."""
+    """KS Assistant API decorator to require user to be an admin."""
 
     def decorator_require_admin(
         func: _FuncType[_HomeAssistantViewT, _P, _ResponseT],

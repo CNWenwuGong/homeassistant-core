@@ -119,7 +119,7 @@
           "type": "person_home",
           "time": 1645902000,
           "module_id": "12:34:56:00:f1:62",
-          "message": "Home Assistant Cloud definiert John Doe und Jane Doe als \"Zu Hause\""
+          "message": "KS Assistant Cloud definiert John Doe und Jane Doe als \"Zu Hause\""
         },
         {
           "id": "1111111111111112c91b3628",

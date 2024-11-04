@@ -140,7 +140,7 @@ class BringTodoListEntity(BringBaseEntity, TodoListEntity):
 
         This results in following behaviour:
 
-        - Completed items will move to the "completed" section in home assistant todo
+        - Completed items will move to the "completed" section in ks assistant todo
             list and get moved to the recently list in bring
         - Bring shows some odd behaviour when renaming items. This is because Bring
             did not have unique identifiers for items in the past and this is still

@@ -1,4 +1,4 @@
-"""The tests for the Home Assistant HTTP component."""
+"""The tests for the KS Assistant HTTP component."""
 
 from datetime import timedelta
 from http import HTTPStatus

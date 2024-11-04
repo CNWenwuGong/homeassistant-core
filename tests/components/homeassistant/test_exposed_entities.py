@@ -1,4 +1,4 @@
-"""Test Home Assistant exposed entities helper."""
+"""Test KS Assistant exposed entities helper."""
 
 import pytest
 from syrupy.assertion import SnapshotAssertion

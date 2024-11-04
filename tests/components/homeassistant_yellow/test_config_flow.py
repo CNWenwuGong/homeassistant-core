@@ -1,4 +1,4 @@
-"""Test the Home Assistant Yellow config flow."""
+"""Test the KS Assistant Yellow config flow."""
 
 from collections.abc import Generator
 from unittest.mock import Mock, patch
@@ -84,7 +84,7 @@ async def test_config_flow(hass: HomeAssistant) -> None:
         )
 
     assert result["type"] is FlowResultType.CREATE_ENTRY
-    assert result["title"] == "Home Assistant Yellow"
+    assert result["title"] == "KS Assistant Yellow"
     assert result["data"] == {"firmware": "ezsp"}
     assert result["options"] == {}
     assert len(mock_setup_entry.mock_calls) == 1
@@ -92,7 +92,7 @@ async def test_config_flow(hass: HomeAssistant) -> None:
     config_entry = hass.config_entries.async_entries(DOMAIN)[0]
     assert config_entry.data == {"firmware": "ezsp"}
     assert config_entry.options == {}
-    assert config_entry.title == "Home Assistant Yellow"
+    assert config_entry.title == "KS Assistant Yellow"
 
 
 async def test_config_flow_single_entry(hass: HomeAssistant) -> None:
@@ -105,7 +105,7 @@ async def test_config_flow_single_entry(hass: HomeAssistant) -> None:
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -145,7 +145,7 @@ async def test_option_flow_led_settings(
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -193,7 +193,7 @@ async def test_option_flow_led_settings_unchanged(
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -227,7 +227,7 @@ async def test_option_flow_led_settings_fail_1(hass: HomeAssistant) -> None:
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -261,7 +261,7 @@ async def test_option_flow_led_settings_fail_2(
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -298,7 +298,7 @@ async def test_firmware_options_flow(hass: HomeAssistant) -> None:
         data={"firmware": ApplicationType.SPINEL},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -318,7 +318,7 @@ async def test_firmware_options_flow(hass: HomeAssistant) -> None:
 
     assert result["step_id"] == "pick_firmware"
     assert result["description_placeholders"]["firmware_type"] == "spinel"
-    assert result["description_placeholders"]["model"] == "Home Assistant Yellow"
+    assert result["description_placeholders"]["model"] == "KS Assistant Yellow"
 
     async def mock_async_step_pick_firmware_zigbee(self, data):
         return await self.async_step_confirm_zigbee(user_input={})
@@ -351,7 +351,7 @@ async def test_options_flow_multipan_uninstall(hass: HomeAssistant) -> None:
         data={"firmware": ApplicationType.CPC},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )

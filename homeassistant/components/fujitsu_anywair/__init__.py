@@ -1,1 +1,1 @@
-"""Fujitsu anywAIR virtual integration for Home Assistant."""
+"""Fujitsu anywAIR virtual integration for KS Assistant."""

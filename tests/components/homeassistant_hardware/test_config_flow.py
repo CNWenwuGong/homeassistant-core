@@ -1,4 +1,4 @@
-"""Test the Home Assistant hardware firmware config flow."""
+"""Test the KS Assistant hardware firmware config flow."""
 
 import asyncio
 from collections.abc import Awaitable, Callable, Generator, Iterator

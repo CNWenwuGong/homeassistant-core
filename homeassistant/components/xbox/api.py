@@ -1,4 +1,4 @@
-"""API for xbox bound to Home Assistant OAuth."""
+"""API for xbox bound to KS Assistant OAuth."""
 
 from aiohttp import ClientSession
 from xbox.webapi.authentication.manager import AuthenticationManager
@@ -17,7 +17,7 @@ class AsyncConfigEntryAuth(AuthenticationManager):
         oauth_session: config_entry_oauth2_flow.OAuth2Session,
     ) -> None:
         """Initialize xbox auth."""
-        # Leaving out client credentials as they are handled by Home Assistant
+        # Leaving out client credentials as they are handled by KS Assistant
         super().__init__(websession, "", "", "")
         self._oauth_session = oauth_session
         self.oauth = self._get_oauth_token()

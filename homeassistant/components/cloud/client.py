@@ -39,7 +39,7 @@ VALID_REPAIR_TRANSLATION_KEYS = {
 
 
 class CloudClient(Interface):
-    """Interface class for Home Assistant Cloud."""
+    """Interface class for KS Assistant Cloud."""
 
     def __init__(
         self,

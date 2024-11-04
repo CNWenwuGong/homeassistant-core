@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run Home Assistant Core",
+      "label": "Run KS Assistant Core",
       "type": "shell",
       "command": "hass -c ./config",
       "group": "test",
@@ -131,7 +131,7 @@
     },
     {
       "label": "Compile English translations",
-      "detail": "In order to test changes to translation files, the translation strings must be compiled into Home Assistant's translation directories.",
+      "detail": "In order to test changes to translation files, the translation strings must be compiled into KS Assistant's translation directories.",
       "type": "shell",
       "command": "python3 -m script.translations develop --all",
       "group": {

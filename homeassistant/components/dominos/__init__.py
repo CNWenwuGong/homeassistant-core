@@ -65,7 +65,7 @@ CONFIG_SCHEMA = vol.Schema(
 
 
 def setup(hass: HomeAssistant, config: ConfigType) -> bool:
-    """Set up is called when Home Assistant is loading our component."""
+    """Set up is called when KS Assistant is loading our component."""
     dominos = Dominos(hass, config)
 
     component = EntityComponent[DominosOrder](_LOGGER, DOMAIN, hass)

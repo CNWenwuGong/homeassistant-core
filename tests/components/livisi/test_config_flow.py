@@ -1,4 +1,4 @@
-"""Test the Livisi Home Assistant config flow."""
+"""Test the Livisi KS Assistant config flow."""
 
 from unittest.mock import patch
 

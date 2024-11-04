@@ -22,7 +22,7 @@ async def async_setup_entry(
 
 
 class DynaliteLight(DynaliteBase, LightEntity):
-    """Representation of a Dynalite Channel as a Home Assistant Light."""
+    """Representation of a Dynalite Channel as a KS Assistant Light."""
 
     _attr_color_mode = ColorMode.BRIGHTNESS
     _attr_supported_color_modes = {ColorMode.BRIGHTNESS}

@@ -1,4 +1,4 @@
-"""Home Assistant command line scripts."""
+"""KS Assistant command line scripts."""
 
 from __future__ import annotations
 

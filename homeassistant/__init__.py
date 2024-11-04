@@ -1,1 +1,1 @@
-"""Init file for Home Assistant."""
+"""Init file for KS Assistant."""

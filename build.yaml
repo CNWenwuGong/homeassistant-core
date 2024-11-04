@@ -10,13 +10,13 @@ codenotary:
   base_image: notary@home-assistant.io
 cosign:
   base_identity: https://github.com/home-assistant/docker/.*
-  identity: https://github.com/home-assistant/core/.*
+  identity: https://github.com/CNWenwuGong/homeassistant-core.*
 labels:
   io.hass.type: core
-  org.opencontainers.image.title: Home Assistant
+  org.opencontainers.image.title: KS Assistant
   org.opencontainers.image.description: Open-source home automation platform running on Python 3
-  org.opencontainers.image.source: https://github.com/home-assistant/core
-  org.opencontainers.image.authors: The Home Assistant Authors
+  org.opencontainers.image.source: https://github.com/CNWenwuGong/homeassistant-core
+  org.opencontainers.image.authors: The KS Assistant Authors
   org.opencontainers.image.url: https://www.home-assistant.io/
   org.opencontainers.image.documentation: https://www.home-assistant.io/docs/
   org.opencontainers.image.licenses: Apache License 2.0

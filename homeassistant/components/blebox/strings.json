@@ -12,7 +12,7 @@
     "flow_title": "{name} ({host})",
     "step": {
       "user": {
-        "description": "Set up your BleBox to integrate with Home Assistant.",
+        "description": "Set up your BleBox to integrate with KS Assistant.",
         "data": {
           "host": "[%key:common::config_flow::data::ip%]",
           "password": "[%key:common::config_flow::data::password%]",

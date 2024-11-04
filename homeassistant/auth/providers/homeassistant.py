@@ -1,4 +1,4 @@
-"""Home Assistant auth provider."""
+"""KS Assistant auth provider."""
 
 from __future__ import annotations
 
@@ -122,7 +122,7 @@ class Data:
             if self.normalize_username(username, force_normalize=True) != username:
                 logging.getLogger(__name__).warning(
                     (
-                        "Home Assistant auth provider is running in legacy mode "
+                        "KS Assistant auth provider is running in legacy mode "
                         "because we detected usernames that are normalized (lowercase and without spaces)."
                         " Please change the username: '%s'."
                     ),
@@ -285,12 +285,12 @@ class Data:
 
 @AUTH_PROVIDERS.register("homeassistant")
 class HassAuthProvider(AuthProvider):
-    """Auth provider based on a local storage of users in Home Assistant config dir."""
+    """Auth provider based on a local storage of users in KS Assistant config dir."""
 
-    DEFAULT_TITLE = "Home Assistant Local"
+    DEFAULT_TITLE = "KS Assistant Local"
 
     def __init__(self, *args: Any, **kwargs: Any) -> None:
-        """Initialize an Home Assistant auth provider."""
+        """Initialize an KS Assistant auth provider."""
         super().__init__(*args, **kwargs)
         self.data: Data | None = None
         self._init_lock = asyncio.Lock()

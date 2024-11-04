@@ -1,4 +1,4 @@
-"""API for fitbit bound to Home Assistant OAuth."""
+"""API for fitbit bound to KS Assistant OAuth."""
 
 from abc import ABC, abstractmethod
 from collections.abc import Callable
@@ -47,7 +47,7 @@ class FitbitApi(ABC):
 
     async def _async_get_client(self) -> Fitbit:
         """Get synchronous client library, called before each client request."""
-        # Always rely on Home Assistant's token update mechanism which refreshes
+        # Always rely on KS Assistant's token update mechanism which refreshes
         # the data in the configuration entry.
         token = await self.async_get_access_token()
         return Fitbit(
@@ -77,7 +77,7 @@ class FitbitApi(ABC):
 
         This is used in a couple ways. The first is to determine the request
         header to use when talking to the fitbit API which changes the
-        units returned by the API. The second is to tell Home Assistant the
+        units returned by the API. The second is to tell KS Assistant the
         units set in sensor values for the values returned by the API.
         """
         if (
@@ -86,7 +86,7 @@ class FitbitApi(ABC):
         ):
             return self._unit_system
         # Use units consistent with the account user profile or fallback to the
-        # home assistant unit settings.
+        # KS Assistant unit settings.
         profile = await self.async_get_user_profile()
         if profile.locale == FitbitUnitSystem.EN_GB:
             return FitbitUnitSystem.EN_GB

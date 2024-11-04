@@ -1,4 +1,4 @@
-"""Component to configure Home Assistant via an API."""
+"""Component to configure KS Assistant via an API."""
 
 from __future__ import annotations
 

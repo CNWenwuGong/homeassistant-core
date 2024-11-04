@@ -1,4 +1,4 @@
-"""Test the Home Assistant Green integration."""
+"""Test the KS Assistant Green integration."""
 
 from unittest.mock import patch
 
@@ -21,7 +21,7 @@ async def test_setup_entry(hass: HomeAssistant) -> None:
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
     with patch(
@@ -43,7 +43,7 @@ async def test_setup_entry_no_hassio(hass: HomeAssistant) -> None:
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
     assert len(hass.config_entries.async_entries()) == 1
@@ -68,7 +68,7 @@ async def test_setup_entry_wrong_board(hass: HomeAssistant) -> None:
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
     assert len(hass.config_entries.async_entries()) == 1
@@ -94,7 +94,7 @@ async def test_setup_entry_wait_hassio(hass: HomeAssistant) -> None:
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
     with patch(

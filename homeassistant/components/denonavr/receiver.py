@@ -88,7 +88,7 @@ class ConnectDenonAVR:
             timeout=self._timeout,
             add_zones=self._zones,
         )
-        # Use httpx.AsyncClient getter provided by Home Assistant
+        # Use httpx.AsyncClient getter provided by KS Assistant
         receiver.set_async_client_getter(self._async_client_getter)
         await receiver.async_setup()
         # Do an initial update if telnet is used.

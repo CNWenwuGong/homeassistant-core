@@ -1,4 +1,4 @@
-"""Home Assistant Cast platform."""
+"""KS Assistant Cast platform."""
 
 from __future__ import annotations
 

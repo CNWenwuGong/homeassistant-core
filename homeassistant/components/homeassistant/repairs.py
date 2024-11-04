@@ -1,4 +1,4 @@
-"""Repairs for Home Assistant."""
+"""Repairs for KS Assistant."""
 
 from __future__ import annotations
 

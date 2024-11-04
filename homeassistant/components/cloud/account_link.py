@@ -97,7 +97,7 @@ class CloudOAuth2Implementation(config_entry_oauth2_flow.AbstractOAuth2Implement
     @property
     def name(self) -> str:
         """Name of the implementation."""
-        return "Home Assistant Cloud"
+        return "KS Assistant Cloud"
 
     @property
     def domain(self) -> str:

@@ -1,4 +1,4 @@
-"""Test Home Assistant file utility functions."""
+"""Test KS Assistant file utility functions."""
 
 import os
 from pathlib import Path

@@ -63,7 +63,7 @@ async def async_setup_entry(
 def convert_exception[**_P, _R](
     func: Callable[_P, Coroutine[Any, Any, _R]],
 ) -> Callable[_P, Coroutine[Any, Any, _R]]:
-    """Return decorator to convert a connection error into a home assistant error."""
+    """Return decorator to convert a connection error into a ks assistant error."""
 
     @functools.wraps(func)
     async def _convert_exception(*args: _P.args, **kwargs: _P.kwargs) -> _R:

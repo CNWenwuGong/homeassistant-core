@@ -1,4 +1,4 @@
-"""Test the Home Assistant Yellow integration."""
+"""Test the KS Assistant Yellow integration."""
 
 from unittest.mock import patch
 
@@ -34,7 +34,7 @@ async def test_setup_entry(
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -91,7 +91,7 @@ async def test_setup_zha(hass: HomeAssistant, addon_store_info) -> None:
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -140,7 +140,7 @@ async def test_setup_entry_no_hassio(hass: HomeAssistant) -> None:
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -167,7 +167,7 @@ async def test_setup_entry_wrong_board(hass: HomeAssistant) -> None:
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -195,7 +195,7 @@ async def test_setup_entry_wait_hassio(hass: HomeAssistant) -> None:
         data={"firmware": ApplicationType.EZSP},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )
@@ -223,7 +223,7 @@ async def test_setup_entry_addon_info_fails(
         data={"firmware": ApplicationType.CPC},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Yellow",
+        title="KS Assistant Yellow",
         version=1,
         minor_version=2,
     )

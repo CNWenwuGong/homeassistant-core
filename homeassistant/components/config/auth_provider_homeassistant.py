@@ -1,4 +1,4 @@
-"""Offer API to configure the Home Assistant auth provider."""
+"""Offer API to configure the KS Assistant auth provider."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from homeassistant.exceptions import Unauthorized
 
 @callback
 def async_setup(hass: HomeAssistant) -> bool:
-    """Enable the Home Assistant views."""
+    """Enable the KS Assistant views."""
     websocket_api.async_register_command(hass, websocket_create)
     websocket_api.async_register_command(hass, websocket_delete)
     websocket_api.async_register_command(hass, websocket_change_password)

@@ -13,7 +13,7 @@
         },
         "data_description": {
           "host": "The hostname or IP address of the Axis device.",
-          "username": "The user name you set up on your Axis device. It is recommended to create a user specifically for Home Assistant."
+          "username": "The user name you set up on your Axis device. It is recommended to create a user specifically for KS Assistant."
         }
       }
     },

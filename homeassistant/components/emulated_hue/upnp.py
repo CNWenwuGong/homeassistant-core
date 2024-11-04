@@ -45,7 +45,7 @@ class DescriptionXmlView(HomeAssistantView):
 <URLBase>http://{self.config.advertise_ip}:{self.config.advertise_port}/</URLBase>
 <device>
 <deviceType>urn:schemas-upnp-org:device:Basic:1</deviceType>
-<friendlyName>Home Assistant Bridge ({self.config.advertise_ip})</friendlyName>
+<friendlyName>KS Assistant Bridge ({self.config.advertise_ip})</friendlyName>
 <manufacturer>Royal Philips Electronics</manufacturer>
 <manufacturerURL>http://www.philips.com</manufacturerURL>
 <modelDescription>Philips hue Personal Wireless Lighting</modelDescription>

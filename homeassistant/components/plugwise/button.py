@@ -1,4 +1,4 @@
-"""Plugwise Button component for Home Assistant."""
+"""Plugwise Button component for KS Assistant."""
 
 from __future__ import annotations
 

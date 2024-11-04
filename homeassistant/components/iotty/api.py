@@ -1,4 +1,4 @@
-"""API for iotty bound to Home Assistant OAuth."""
+"""API for iotty bound to KS Assistant OAuth."""
 
 from __future__ import annotations
 

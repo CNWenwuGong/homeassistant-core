@@ -1,4 +1,4 @@
-"""The Home Assistant Hardware integration."""
+"""The KS Assistant Hardware integration."""
 
 from __future__ import annotations
 

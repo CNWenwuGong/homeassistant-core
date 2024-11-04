@@ -43,7 +43,7 @@ class EcoalTempSensor(SensorEntity):
     def update(self) -> None:
         """Fetch new state data for the sensor.
 
-        This is the only method that should fetch new data for Home Assistant.
+        This is the only method that should fetch new data for KS Assistant.
         """
         # Old values read 0.5 back can still be used
         status = self._ecoal_contr.get_cached_status()

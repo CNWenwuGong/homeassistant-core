@@ -1,4 +1,4 @@
-"""The tests for Home Assistant ffmpeg."""
+"""The tests for KS Assistant ffmpeg."""
 
 from unittest.mock import AsyncMock, MagicMock, Mock, call, patch
 

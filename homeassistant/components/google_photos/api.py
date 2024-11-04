@@ -1,4 +1,4 @@
-"""API for Google Photos bound to Home Assistant OAuth."""
+"""API for Google Photos bound to KS Assistant OAuth."""
 
 from typing import cast
 

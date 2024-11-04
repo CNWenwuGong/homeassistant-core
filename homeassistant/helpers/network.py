@@ -316,7 +316,7 @@ def _get_external_url(
 
 @bind_hass
 def _get_cloud_url(hass: HomeAssistant, require_current_request: bool = False) -> str:
-    """Get external Home Assistant Cloud URL of this instance."""
+    """Get external KS Assistant Cloud URL of this instance."""
     if "cloud" in hass.config.components:
         # Local import to avoid circular dependencies
         # pylint: disable-next=import-outside-toplevel

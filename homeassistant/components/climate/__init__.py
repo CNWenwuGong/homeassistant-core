@@ -430,7 +430,7 @@ class ClimateEntity(Entity, cached_properties=CACHED_PROPERTIES_WITH_ATTR_):
             (
                 "%s::%s implements the `is_aux_heat` property or uses the auxiliary  "
                 "heater methods in a subclass of ClimateEntity which is "
-                "deprecated and will be unsupported from Home Assistant 2025.4."
+                "deprecated and will be unsupported from KS Assistant 2025.4."
                 " Please %s"
             ),
             self.platform.platform_name,

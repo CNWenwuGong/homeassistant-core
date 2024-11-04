@@ -1,4 +1,4 @@
-"""Test Home Assistant color util methods."""
+"""Test KS Assistant color util methods."""
 
 import math
 
@@ -465,7 +465,7 @@ def test_color_temperature_to_rgbww() -> None:
     """Test color temp to warm, cold conversion.
 
     Temperature values must be in mireds
-    Home Assistant uses rgbcw for rgbww
+    KS Assistant uses rgbcw for rgbww
     """
     # Coldest color temperature -> only cold channel enabled
     assert color_util.color_temperature_to_rgbww(6535, 255, 2000, 6535) == (
@@ -518,7 +518,7 @@ def test_rgbww_to_color_temperature() -> None:
     """Test rgbww conversion to color temp.
 
     Temperature values must be in mireds
-    Home Assistant uses rgbcw for rgbww
+    KS Assistant uses rgbcw for rgbww
     """
     # Only cold channel enabled -> coldest color temperature
     assert color_util.rgbww_to_color_temperature((0, 0, 0, 255, 0), 2000, 6535) == (
@@ -558,7 +558,7 @@ def test_white_levels_to_color_temperature() -> None:
     """Test warm, cold conversion to color temp.
 
     Temperature values must be in mireds
-    Home Assistant uses rgbcw for rgbww
+    KS Assistant uses rgbcw for rgbww
     """
     # Only cold channel enabled -> coldest color temperature
     assert color_util._white_levels_to_color_temperature(255, 0, 2000, 6535) == (

@@ -1,4 +1,4 @@
-"""Test the Home Assistant SkyConnect hardware platform."""
+"""Test the KS Assistant SkyConnect hardware platform."""
 
 from homeassistant.components.homeassistant_sky_connect.const import DOMAIN
 from homeassistant.const import EVENT_HOMEASSISTANT_STARTED
@@ -24,7 +24,7 @@ CONFIG_ENTRY_DATA_2 = {
     "pid": "EA60",
     "serial_number": "9e2adbd75b8beb119fe564a0f320645d",
     "manufacturer": "Nabu Casa",
-    "product": "Home Assistant Connect ZBT-1",
+    "product": "KS Assistant Connect ZBT-1",
     "firmware": "ezsp",
 }
 
@@ -41,7 +41,7 @@ async def test_hardware_info(
         data=CONFIG_ENTRY_DATA,
         domain=DOMAIN,
         options={},
-        title="Home Assistant SkyConnect",
+        title="KS Assistant SkyConnect",
         unique_id="unique_1",
         version=1,
         minor_version=2,
@@ -53,7 +53,7 @@ async def test_hardware_info(
         data=CONFIG_ENTRY_DATA_2,
         domain=DOMAIN,
         options={},
-        title="Home Assistant Connect ZBT-1",
+        title="KS Assistant Connect ZBT-1",
         unique_id="unique_2",
         version=1,
         minor_version=2,
@@ -81,7 +81,7 @@ async def test_hardware_info(
                     "manufacturer": "Nabu Casa",
                     "description": "SkyConnect v1.0",
                 },
-                "name": "Home Assistant SkyConnect",
+                "name": "KS Assistant SkyConnect",
                 "url": "https://skyconnect.home-assistant.io/documentation/",
             },
             {
@@ -92,9 +92,9 @@ async def test_hardware_info(
                     "pid": "EA60",
                     "serial_number": "9e2adbd75b8beb119fe564a0f320645d",
                     "manufacturer": "Nabu Casa",
-                    "description": "Home Assistant Connect ZBT-1",
+                    "description": "KS Assistant Connect ZBT-1",
                 },
-                "name": "Home Assistant Connect ZBT-1",
+                "name": "KS Assistant Connect ZBT-1",
                 "url": "https://skyconnect.home-assistant.io/documentation/",
             },
         ]

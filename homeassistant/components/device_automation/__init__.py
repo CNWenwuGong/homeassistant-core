@@ -100,7 +100,7 @@ class DeviceAutomationType(Enum):
     )
 
 
-# TYPES is deprecated as of Home Assistant 2022.2, use DeviceAutomationType instead
+# TYPES is deprecated as of KS Assistant 2022.2, use DeviceAutomationType instead
 TYPES = {
     "trigger": DeviceAutomationType.TRIGGER.value,
     "condition": DeviceAutomationType.CONDITION.value,

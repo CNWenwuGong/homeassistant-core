@@ -1,4 +1,4 @@
-"""Constants used by Home Assistant components."""
+"""Constants used by KS Assistant components."""
 
 from __future__ import annotations
 
@@ -1694,9 +1694,9 @@ _DEPRECATED_ENTITY_CATEGORY_DIAGNOSTIC: Final = DeprecatedConstantEnum(
 )
 ENTITY_CATEGORIES: Final[list[str]] = [cls.value for cls in EntityCategory]
 
-# The ID of the Home Assistant Media Player Cast App
+# The ID of the KS Assistant Media Player Cast App
 CAST_APP_ID_HOMEASSISTANT_MEDIA: Final = "B45F4572"
-# The ID of the Home Assistant Lovelace Cast App
+# The ID of the KS Assistant Lovelace Cast App
 CAST_APP_ID_HOMEASSISTANT_LOVELACE: Final = "A078F6B0"
 
 # User used by Supervisor

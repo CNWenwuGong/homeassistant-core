@@ -1,4 +1,4 @@
-"""Typing Helpers for Home Assistant."""
+"""Typing Helpers for KS Assistant."""
 
 from collections.abc import Mapping
 from enum import Enum

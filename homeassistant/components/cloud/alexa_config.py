@@ -1,4 +1,4 @@
-"""Alexa configuration for Home Assistant Cloud."""
+"""Alexa configuration for KS Assistant Cloud."""
 
 from __future__ import annotations
 

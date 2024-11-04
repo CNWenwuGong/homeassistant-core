@@ -1,1 +1,1 @@
-"""Cribl virtual integration for Home Assistant."""
+"""Cribl virtual integration for KS Assistant."""

@@ -1,4 +1,4 @@
-"""All methods needed to bootstrap a Home Assistant instance."""
+"""All methods needed to bootstrap a KS Assistant instance."""
 
 from __future__ import annotations
 
@@ -172,7 +172,7 @@ async def async_setup_component(
             futures.append(setup_done_future)
         for future in futures:
             # If the setup call is cancelled it likely means
-            # Home Assistant is shutting down so the future might
+            # KS Assistant is shutting down so the future might
             # already be done which will cause this to raise
             # an InvalidStateError which is appropriate because
             # the component setup was cancelled and is in an
@@ -273,7 +273,7 @@ def _log_error_setup_error(
 async def _async_setup_component(
     hass: core.HomeAssistant, domain: str, config: ConfigType
 ) -> bool:
-    """Set up a component for Home Assistant.
+    """Set up a component for KS Assistant.
 
     This method is a coroutine.
     """
@@ -739,7 +739,7 @@ def async_start_setup(
 ) -> Generator[None]:
     """Keep track of when setup starts and finishes.
 
-    :param hass: Home Assistant instance
+    :param hass: KS Assistant instance
     :param integration: The integration that is being setup
     :param phase: The phase of setup
     :param group: The group (config entry/platform instance) that is being setup

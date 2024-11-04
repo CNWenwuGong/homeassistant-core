@@ -1,4 +1,4 @@
-"""Constants for the Home Assistant alerts integration."""
+"""Constants for the KS Assistant alerts integration."""
 
 from datetime import timedelta
 

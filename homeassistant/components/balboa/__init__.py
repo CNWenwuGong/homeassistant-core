@@ -83,7 +83,7 @@ async def async_setup_time_sync(hass: HomeAssistant, entry: ConfigEntry) -> None
     async def sync_time(now: datetime) -> None:
         now = dt_util.as_local(now)
         if (now.hour, now.minute) != (spa.time_hour, spa.time_minute):
-            _LOGGER.debug("Syncing time with Home Assistant")
+            _LOGGER.debug("Syncing time with KS Assistant")
             await spa.set_time(now.hour, now.minute)
 
     await sync_time(dt_util.utcnow())

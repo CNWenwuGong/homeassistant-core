@@ -139,7 +139,7 @@ class EnvisalinkAlarm(EnvisalinkEntity, AlarmControlPanelEntity):
 
     @callback
     def async_update_callback(self, partition):
-        """Update Home Assistant state, if needed."""
+        """Update KS Assistant state, if needed."""
         if partition is None or int(partition) == self._partition_number:
             self.async_write_ha_state()
 

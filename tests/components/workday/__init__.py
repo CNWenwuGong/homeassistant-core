@@ -1,4 +1,4 @@
-"""Tests the Home Assistant workday binary sensor."""
+"""Tests the KS Assistant workday binary sensor."""
 
 from __future__ import annotations
 
@@ -25,7 +25,7 @@ async def init_integration(
     entry_id: str = "1",
     source: str = SOURCE_USER,
 ) -> MockConfigEntry:
-    """Set up the Scrape integration in Home Assistant."""
+    """Set up the Scrape integration in KS Assistant."""
 
     config_entry = MockConfigEntry(
         domain=DOMAIN,

@@ -9,7 +9,7 @@ license     = {text = "Apache-2.0"}
 description = "Open-source home automation platform running on Python 3."
 readme      = "README.rst"
 authors     = [
-    {name = "The Home Assistant Authors", email = "hello@home-assistant.io"}
+    {name = "The KS Assistant Authors", email = "hello@home-assistant.io"}
 ]
 keywords    = ["home", "automation"]
 classifiers = [

@@ -1,4 +1,4 @@
-"""Helpers for Home Assistant dispatcher & internal component/platform."""
+"""Helpers for KS Assistant dispatcher & internal component/platform."""
 
 from __future__ import annotations
 

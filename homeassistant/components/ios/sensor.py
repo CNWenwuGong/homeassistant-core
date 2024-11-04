@@ -1,4 +1,4 @@
-"""Support for Home Assistant iOS app sensors."""
+"""Support for KS Assistant iOS app sensors."""
 
 from __future__ import annotations
 

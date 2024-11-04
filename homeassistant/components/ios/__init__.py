@@ -1,4 +1,4 @@
-"""Native Home Assistant iOS app component."""
+"""Native KS Assistant iOS app component."""
 
 import datetime
 from http import HTTPStatus

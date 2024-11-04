@@ -230,7 +230,7 @@ async def fetch_blueprint_from_website_url(
 ) -> ImportedBlueprint:
     """Get a blueprint from our website."""
     if (WEBSITE_PATTERN.match(url)) is None:
-        raise UnsupportedUrl("Not a Home Assistant website URL")
+        raise UnsupportedUrl("Not a KS Assistant website URL")
 
     session = aiohttp_client.async_get_clientsession(hass)
 

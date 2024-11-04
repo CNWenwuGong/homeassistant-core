@@ -4,7 +4,7 @@
     "step": {
       "user": {
         "title": "Connect to the BSB-Lan device",
-        "description": "Set up your BSB-Lan device to integrate with Home Assistant.",
+        "description": "Set up your BSB-Lan device to integrate with KS Assistant.",
         "data": {
           "host": "[%key:common::config_flow::data::host%]",
           "port": "[%key:common::config_flow::data::port%]",

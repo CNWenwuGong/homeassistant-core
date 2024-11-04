@@ -37,7 +37,7 @@ async def async_setup_entry(
     config_entry: ConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
-    """Set up Home Assistant Cloud speech platform via config entry."""
+    """Set up KS Assistant Cloud speech platform via config entry."""
     stt_platform_loaded = hass.data[DATA_PLATFORMS_SETUP][Platform.STT]
     stt_platform_loaded.set()
     cloud = hass.data[DATA_CLOUD]
@@ -45,9 +45,9 @@ async def async_setup_entry(
 
 
 class CloudProviderEntity(SpeechToTextEntity):
-    """Home Assistant Cloud speech API provider."""
+    """KS Assistant Cloud speech API provider."""
 
-    _attr_name = "Home Assistant Cloud"
+    _attr_name = "KS Assistant Cloud"
     _attr_unique_id = STT_ENTITY_UNIQUE_ID
 
     def __init__(self, cloud: Cloud[CloudClient]) -> None:

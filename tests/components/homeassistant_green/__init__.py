@@ -1,1 +1,1 @@
-"""Tests for the Home Assistant Green integration."""
+"""Tests for the KS Assistant Green integration."""

@@ -37,7 +37,7 @@ class HVACMode(StrEnum):
     FAN_ONLY = "fan_only"
 
 
-# These HVAC_MODE_* constants are deprecated as of Home Assistant 2022.5.
+# These HVAC_MODE_* constants are deprecated as of KS Assistant 2022.5.
 # Please use the HVACMode enum instead.
 _DEPRECATED_HVAC_MODE_OFF = DeprecatedConstantEnum(HVACMode.OFF, "2025.1")
 _DEPRECATED_HVAC_MODE_HEAT = DeprecatedConstantEnum(HVACMode.HEAT, "2025.1")
@@ -106,7 +106,7 @@ class HVACAction(StrEnum):
     PREHEATING = "preheating"
 
 
-# These CURRENT_HVAC_* constants are deprecated as of Home Assistant 2022.5.
+# These CURRENT_HVAC_* constants are deprecated as of KS Assistant 2022.5.
 # Please use the HVACAction enum instead.
 _DEPRECATED_CURRENT_HVAC_OFF = DeprecatedConstantEnum(HVACAction.OFF, "2025.1")
 _DEPRECATED_CURRENT_HVAC_HEAT = DeprecatedConstantEnum(HVACAction.HEATING, "2025.1")
@@ -170,7 +170,7 @@ class ClimateEntityFeature(IntFlag):
     TURN_ON = 256
 
 
-# These SUPPORT_* constants are deprecated as of Home Assistant 2022.5.
+# These SUPPORT_* constants are deprecated as of KS Assistant 2022.5.
 # Please use the ClimateEntityFeature enum instead.
 _DEPRECATED_SUPPORT_TARGET_TEMPERATURE = DeprecatedConstantEnum(
     ClimateEntityFeature.TARGET_TEMPERATURE, "2025.1"

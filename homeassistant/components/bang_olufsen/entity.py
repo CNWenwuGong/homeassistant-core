@@ -25,7 +25,7 @@ from .const import DOMAIN
 
 
 class BangOlufsenBase:
-    """Base class for BangOlufsen Home Assistant objects."""
+    """Base class for BangOlufsen KS Assistant objects."""
 
     def __init__(self, entry: ConfigEntry, client: MozartClient) -> None:
         """Initialize the object."""

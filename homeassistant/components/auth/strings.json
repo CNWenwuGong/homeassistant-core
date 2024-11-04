@@ -9,7 +9,7 @@
         }
       },
       "error": {
-        "invalid_code": "Invalid code, please try again. If you get this error consistently, please make sure the clock of your Home Assistant system is accurate."
+        "invalid_code": "Invalid code, please try again. If you get this error consistently, please make sure the clock of your KS Assistant system is accurate."
       }
     },
     "notify": {
@@ -46,7 +46,7 @@
   "issues": {
     "homeassistant_provider_not_normalized_usernames": {
       "title": "Not normalized usernames detected",
-      "description": "The Home Assistant auth provider is running in legacy mode because we detected not normalized usernames. The legacy mode is deprecated and will be removed. Please change the following usernames:\n\n{usernames}\n\nNormalized usernames are case folded (lower case) and stripped of whitespaces."
+      "description": "The KS Assistant auth provider is running in legacy mode because we detected not normalized usernames. The legacy mode is deprecated and will be removed. Please change the following usernames:\n\n{usernames}\n\nNormalized usernames are case folded (lower case) and stripped of whitespaces."
     }
   }
 }

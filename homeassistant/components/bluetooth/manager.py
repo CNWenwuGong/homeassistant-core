@@ -41,7 +41,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 class HomeAssistantBluetoothManager(BluetoothManager):
-    """Manage Bluetooth for Home Assistant."""
+    """Manage Bluetooth for KS Assistant."""
 
     __slots__ = (
         "hass",

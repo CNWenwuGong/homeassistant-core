@@ -1,4 +1,4 @@
-"""The Home Assistant Yellow integration."""
+"""The KS Assistant Yellow integration."""
 
 from __future__ import annotations
 
@@ -23,9 +23,9 @@ _LOGGER = logging.getLogger(__name__)
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Set up a Home Assistant Yellow config entry."""
+    """Set up a KS Assistant Yellow config entry."""
     if not is_hassio(hass):
-        # Not running under supervisor, Home Assistant may have been migrated
+        # Not running under supervisor, KS Assistant may have been migrated
         hass.async_create_task(hass.config_entries.async_remove(entry.entry_id))
         return False
 
@@ -34,7 +34,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         raise ConfigEntryNotReady
 
     if os_info.get("board") != "yellow":
-        # Not running on a Home Assistant Yellow, Home Assistant may have been migrated
+        # Not running on a KS Assistant Yellow, KS Assistant may have been migrated
         hass.async_create_task(hass.config_entries.async_remove(entry.entry_id))
         return False
 

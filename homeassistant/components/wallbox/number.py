@@ -1,4 +1,4 @@
-"""Home Assistant component for accessing the Wallbox Portal API.
+"""KS Assistant component for accessing the Wallbox Portal API.
 
 The number component allows control of charging current.
 """

@@ -1,4 +1,4 @@
-"""Test for a Home Assistant bridge that changes cover features at runtime."""
+"""Test for a KS Assistant bridge that changes cover features at runtime."""
 
 from homeassistant.components.cover import CoverEntityFeature
 from homeassistant.const import ATTR_SUPPORTED_FEATURES

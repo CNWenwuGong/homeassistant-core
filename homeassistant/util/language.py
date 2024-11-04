@@ -1,4 +1,4 @@
-"""Helper methods for language selection in Home Assistant."""
+"""Helper methods for language selection in KS Assistant."""
 
 from __future__ import annotations
 

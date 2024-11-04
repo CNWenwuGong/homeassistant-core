@@ -1,4 +1,4 @@
-"""Provide an authentication layer for Home Assistant."""
+"""Provide an authentication layer for KS Assistant."""
 
 from __future__ import annotations
 
@@ -172,7 +172,7 @@ class AuthManagerFlowManager(
 
 
 class AuthManager:
-    """Manage the authentication for Home Assistant."""
+    """Manage the authentication for KS Assistant."""
 
     def __init__(
         self,

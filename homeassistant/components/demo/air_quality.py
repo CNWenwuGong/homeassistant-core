@@ -22,7 +22,7 @@ async def async_setup_entry(
 class DemoAirQuality(AirQualityEntity):
     """Representation of Air Quality data."""
 
-    _attr_attribution = "Powered by Home Assistant"
+    _attr_attribution = "Powered by KS Assistant"
     _attr_should_poll = False
 
     def __init__(self, name: str, pm_2_5: int, pm_10: int, n2o: int | None) -> None:

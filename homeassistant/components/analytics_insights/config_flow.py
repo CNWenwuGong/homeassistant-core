@@ -61,7 +61,7 @@ class HomeassistantAnalyticsConfigFlow(ConfigFlow, domain=DOMAIN):
                 errors["base"] = "no_integrations_selected"
             else:
                 return self.async_create_entry(
-                    title="Home Assistant Analytics Insights",
+                    title="KS Assistant Analytics Insights",
                     data={},
                     options={
                         CONF_TRACKED_INTEGRATIONS: user_input.get(
@@ -80,7 +80,7 @@ class HomeassistantAnalyticsConfigFlow(ConfigFlow, domain=DOMAIN):
             integrations = await client.get_integrations()
             custom_integrations = await client.get_custom_integrations()
         except HomeassistantAnalyticsConnectionError:
-            LOGGER.exception("Error connecting to Home Assistant analytics")
+            LOGGER.exception("Error connecting to KS Assistant analytics")
             return self.async_abort(reason="cannot_connect")
         except Exception:  # noqa: BLE001
             LOGGER.exception("Unexpected error")
@@ -151,7 +151,7 @@ class HomeassistantAnalyticsOptionsFlowHandler(OptionsFlowWithConfigEntry):
             integrations = await client.get_integrations()
             custom_integrations = await client.get_custom_integrations()
         except HomeassistantAnalyticsConnectionError:
-            LOGGER.exception("Error connecting to Home Assistant analytics")
+            LOGGER.exception("Error connecting to KS Assistant analytics")
             return self.async_abort(reason="cannot_connect")
 
         options = [

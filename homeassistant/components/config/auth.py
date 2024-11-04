@@ -1,4 +1,4 @@
-"""Offer API to configure Home Assistant auth."""
+"""Offer API to configure KS Assistant auth."""
 
 from __future__ import annotations
 
@@ -23,7 +23,7 @@ SCHEMA_WS_DELETE = websocket_api.BASE_COMMAND_MESSAGE_SCHEMA.extend(
 
 @callback
 def async_setup(hass: HomeAssistant) -> bool:
-    """Enable the Home Assistant views."""
+    """Enable the KS Assistant views."""
     websocket_api.async_register_command(
         hass, WS_TYPE_LIST, websocket_list, SCHEMA_WS_LIST
     )

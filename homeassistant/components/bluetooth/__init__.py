@@ -182,7 +182,7 @@ async def _async_start_adapter_discovery(
         # the debounce time to ensure we do not miss the
         # adapter becoming available to DBus since otherwise
         # we will never see the new adapter until
-        # Home Assistant is restarted
+        # KS Assistant is restarted
         async_call_later(
             hass,
             BLUETOOTH_DISCOVERY_COOLDOWN_SECONDS + LINUX_FIRMWARE_LOAD_FALLBACK_SECONDS,

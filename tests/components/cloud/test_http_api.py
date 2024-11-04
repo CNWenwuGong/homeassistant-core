@@ -38,7 +38,7 @@ PIPELINE_DATA_LEGACY = {
             "conversation_language": "language_1",
             "id": "12345",
             "language": "language_1",
-            "name": "Home Assistant Cloud",
+            "name": "KS Assistant Cloud",
             "stt_engine": "cloud",
             "stt_language": "language_1",
             "tts_engine": "cloud",
@@ -58,7 +58,7 @@ PIPELINE_DATA = {
             "conversation_language": "language_1",
             "id": "12345",
             "language": "language_1",
-            "name": "Home Assistant Cloud",
+            "name": "KS Assistant Cloud",
             "stt_engine": "stt.home_assistant_cloud",
             "stt_language": "language_1",
             "tts_engine": "cloud",
@@ -254,7 +254,7 @@ async def test_login_view_create_pipeline(
         hass,
         stt_engine_id="stt.home_assistant_cloud",
         tts_engine_id="tts.home_assistant_cloud",
-        pipeline_name="Home Assistant Cloud",
+        pipeline_name="KS Assistant Cloud",
     )
 
 
@@ -294,7 +294,7 @@ async def test_login_view_create_pipeline_fail(
         hass,
         stt_engine_id="stt.home_assistant_cloud",
         tts_engine_id="tts.home_assistant_cloud",
-        pipeline_name="Home Assistant Cloud",
+        pipeline_name="KS Assistant Cloud",
     )
 
 

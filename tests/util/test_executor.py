@@ -1,4 +1,4 @@
-"""Test Home Assistant executor util."""
+"""Test KS Assistant executor util."""
 
 import concurrent.futures
 import time

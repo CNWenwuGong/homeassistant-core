@@ -1,4 +1,4 @@
-"""API for Neato Botvac bound to Home Assistant OAuth."""
+"""API for Neato Botvac bound to KS Assistant OAuth."""
 
 from __future__ import annotations
 

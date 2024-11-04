@@ -1,4 +1,4 @@
-"""Test for a Home Assistant bridge that changes fan features at runtime."""
+"""Test for a KS Assistant bridge that changes fan features at runtime."""
 
 from homeassistant.components.fan import FanEntityFeature
 from homeassistant.const import ATTR_SUPPORTED_FEATURES

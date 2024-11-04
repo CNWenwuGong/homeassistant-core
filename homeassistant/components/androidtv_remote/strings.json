@@ -3,14 +3,14 @@
     "flow_title": "{name}",
     "step": {
       "user": {
-        "description": "Enter the IP address of the Android TV you want to add to Home Assistant. It will turn on and a pairing code will be displayed on it that you will need to enter in the next screen.",
+        "description": "Enter the IP address of the Android TV you want to add to KS Assistant. It will turn on and a pairing code will be displayed on it that you will need to enter in the next screen.",
         "data": {
           "host": "[%key:common::config_flow::data::host%]"
         }
       },
       "zeroconf_confirm": {
         "title": "Discovered Android TV",
-        "description": "Do you want to add the Android TV ({name}) to Home Assistant?  It will turn on and a pairing code will be displayed on it that you will need to enter in the next screen."
+        "description": "Do you want to add the Android TV ({name}) to KS Assistant?  It will turn on and a pairing code will be displayed on it that you will need to enter in the next screen."
       },
       "pair": {
         "description": "Enter the pairing code displayed on the Android TV ({name}).",

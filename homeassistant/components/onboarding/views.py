@@ -313,7 +313,7 @@ class AnalyticsOnboardingView(_BaseOnboardingView):
 
 @callback
 def _async_get_hass_provider(hass: HomeAssistant) -> HassAuthProvider:
-    """Get the Home Assistant auth provider."""
+    """Get the KS Assistant auth provider."""
     for prv in hass.auth.auth_providers:
         if prv.type == "homeassistant":
             return cast(HassAuthProvider, prv)

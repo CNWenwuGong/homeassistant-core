@@ -59,7 +59,7 @@ async def async_setup_entry(
     vacuums.extend(
         [EcovacsLegacyVacuum(device) for device in controller.legacy_devices]
     )
-    _LOGGER.debug("Adding Ecovacs Vacuums to Home Assistant: %s", vacuums)
+    _LOGGER.debug("Adding Ecovacs Vacuums to KS Assistant: %s", vacuums)
     async_add_entities(vacuums)
 
     platform = entity_platform.async_get_current_platform()

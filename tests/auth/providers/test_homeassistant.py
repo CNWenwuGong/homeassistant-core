@@ -1,4 +1,4 @@
-"""Test the Home Assistant local auth provider."""
+"""Test the KS Assistant local auth provider."""
 
 import asyncio
 from typing import Any

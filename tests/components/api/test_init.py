@@ -1,4 +1,4 @@
-"""The tests for the Home Assistant API component."""
+"""The tests for the KS Assistant API component."""
 
 import asyncio
 from http import HTTPStatus
@@ -26,7 +26,7 @@ from tests.typing import ClientSessionGenerator
 def mock_api_client(
     hass: HomeAssistant, hass_client: ClientSessionGenerator
 ) -> TestClient:
-    """Start the Home Assistant HTTP component and return admin API client."""
+    """Start the KS Assistant HTTP component and return admin API client."""
     hass.loop.run_until_complete(async_setup_component(hass, "api", {}))
     return hass.loop.run_until_complete(hass_client())
 

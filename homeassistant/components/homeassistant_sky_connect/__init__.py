@@ -1,4 +1,4 @@
-"""The Home Assistant SkyConnect integration."""
+"""The KS Assistant SkyConnect integration."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Set up a Home Assistant SkyConnect config entry."""
+    """Set up a KS Assistant SkyConnect config entry."""
     return True
 
 

@@ -97,7 +97,7 @@ The result payload likes
 
 Send websocket command `auth/long_lived_access_token` will create
 a long-lived access token for current user. Access token will not be saved in
-Home Assistant. User need to record the token in secure place.
+KS Assistant. User need to record the token in secure place.
 
 {
     "id": 11,
@@ -661,12 +661,12 @@ def websocket_delete_all_refresh_tokens(
         close the connection.
 
         This is implemented as a tracked task to ensure the token
-        is still deleted if Home Assistant is shut down during
+        is still deleted if KS Assistant is shut down during
         the delay.
 
         It should not be refactored to use a call_later as that
         would not be tracked and the token would not be deleted
-        if Home Assistant was shut down during the delay.
+        if KS Assistant was shut down during the delay.
         """
         try:
             await asyncio.sleep(DELETE_CURRENT_TOKEN_DELAY)
@@ -680,7 +680,7 @@ def websocket_delete_all_refresh_tokens(
     ):
         # Deleting the token will close the connection so we need
         # to do it with a delay in a tracked task to ensure it still
-        # happens if Home Assistant is shutting down.
+        # happens if KS Assistant is shutting down.
         hass.async_create_task(_delete_current_token_soon())
 
 

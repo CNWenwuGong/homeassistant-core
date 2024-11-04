@@ -118,7 +118,7 @@ async def test_webhook_post(
     await hass.async_block_till_done()
     assert len(events) == 1
 
-    # Request from Home Assistant Cloud remote UI
+    # Request from KS Assistant Cloud remote UI
     with patch(
         "hass_nabucasa.remote.is_cloud_request", Mock(get=Mock(return_value=True))
     ):

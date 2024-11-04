@@ -1,4 +1,4 @@
-"""The tests for Home Assistant frontend."""
+"""The tests for KS Assistant frontend."""
 
 from asyncio import AbstractEventLoop
 from collections.abc import Generator
@@ -107,7 +107,7 @@ def aiohttp_client(
 async def mock_http_client(
     hass: HomeAssistant, aiohttp_client: ClientSessionGenerator, frontend: None
 ) -> TestClient:
-    """Start the Home Assistant HTTP component."""
+    """Start the KS Assistant HTTP component."""
     return await aiohttp_client(hass.http.app)
 
 
@@ -115,7 +115,7 @@ async def mock_http_client(
 async def themes_ws_client(
     hass: HomeAssistant, hass_ws_client: WebSocketGenerator, frontend_themes: None
 ) -> MockHAClientWebSocket:
-    """Start the Home Assistant HTTP component."""
+    """Start the KS Assistant HTTP component."""
     return await hass_ws_client(hass)
 
 
@@ -123,7 +123,7 @@ async def themes_ws_client(
 async def ws_client(
     hass: HomeAssistant, hass_ws_client: WebSocketGenerator, frontend: None
 ) -> MockHAClientWebSocket:
-    """Start the Home Assistant HTTP component."""
+    """Start the KS Assistant HTTP component."""
     return await hass_ws_client(hass)
 
 
@@ -133,7 +133,7 @@ async def mock_http_client_with_extra_js(
     aiohttp_client: ClientSessionGenerator,
     ignore_frontend_deps: None,
 ) -> TestClient:
-    """Start the Home Assistant HTTP component."""
+    """Start the KS Assistant HTTP component."""
     assert await async_setup_component(
         hass,
         "frontend",
@@ -706,7 +706,7 @@ async def test_get_version(
     cur_version = next(
         req.split("==", 1)[1]
         for req in frontend.requirements
-        if req.startswith("home-assistant-frontend==")
+        if req.startswith("ks-assistant-frontend==")
     )
 
     await ws_client.send_json({"id": 5, "type": "frontend/get_version"})

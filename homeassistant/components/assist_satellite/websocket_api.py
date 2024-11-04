@@ -163,7 +163,7 @@ async def websocket_test_connection(
     connection: websocket_api.connection.ActiveConnection,
     msg: dict[str, Any],
 ) -> None:
-    """Test the connection between the device and Home Assistant.
+    """Test the connection between the device and KS Assistant.
 
     Send an announcement to the device with a special media id.
     """

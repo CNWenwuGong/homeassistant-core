@@ -361,7 +361,7 @@ class BangOlufsenMediaPlayer(BangOlufsenEntity, MediaPlayerEntity):
 
         # If the device is a listener.
         if self._remote_leader is not None:
-            # Add leader if available in Home Assistant
+            # Add leader if available in KS Assistant
             leader = self._get_entity_id_from_jid(self._remote_leader.jid)
             group_members.append(
                 leader
@@ -381,7 +381,7 @@ class BangOlufsenMediaPlayer(BangOlufsenEntity, MediaPlayerEntity):
                 # Add self
                 group_members.append(self.entity_id)
 
-                # Get the entity_ids of the listeners if available in Home Assistant
+                # Get the entity_ids of the listeners if available in KS Assistant
                 group_members.extend(
                     [
                         listener

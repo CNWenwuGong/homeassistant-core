@@ -533,7 +533,7 @@ class FlowManager(abc.ABC, Generic[_FlowContextT, _FlowResultT, _HandlerT]):
             report(
                 (
                     "does not use FlowResultType enum for data entry flow result type. "
-                    "This is deprecated and will stop working in Home Assistant 2025.1"
+                    "This is deprecated and will stop working in KS Assistant 2025.1"
                 ),
                 error_if_core=False,
             )
@@ -819,7 +819,7 @@ class FlowHandler(Generic[_FlowContextT, _FlowResultT, _HandlerT]):
             _LOGGER.warning(
                 (
                     "%s::%s calls async_show_progress without passing a progress task, "
-                    "this is not valid and will break in Home Assistant Core 2024.8. "
+                    "this is not valid and will break in KS Assistant Core 2024.8. "
                     "Please %s"
                 ),
                 cls.__module__,

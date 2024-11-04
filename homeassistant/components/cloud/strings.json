@@ -2,7 +2,7 @@
   "system_health": {
     "info": {
       "can_reach_cert_server": "Reach certificate server",
-      "can_reach_cloud": "Reach Home Assistant Cloud",
+      "can_reach_cloud": "Reach KS Assistant Cloud",
       "can_reach_cloud_auth": "Reach authentication server",
       "certificate_status": "Certificate status",
       "relayer_connected": "Relayer connected",
@@ -31,7 +31,7 @@
     },
     "deprecated_tts_platform_config": {
       "title": "The Cloud text-to-speech platform configuration is deprecated",
-      "description": "The whole `platform: cloud` entry under the `tts:` section in configuration.yaml is deprecated and should be removed. You can use the UI to change settings for the Cloud text-to-speech platform. Please adjust your configuration.yaml and restart Home Assistant to fix this issue."
+      "description": "The whole `platform: cloud` entry under the `tts:` section in configuration.yaml is deprecated and should be removed. You can use the UI to change settings for the Cloud text-to-speech platform. Please adjust your configuration.yaml and restart KS Assistant to fix this issue."
     },
     "deprecated_voice": {
       "title": "A deprecated voice was used",
@@ -49,7 +49,7 @@
       "fix_flow": {
         "step": {
           "confirm_change_plan": {
-            "description": "We've recently updated our subscription system. To continue using Home Assistant Cloud you need to one-time approve the change in PayPal.\n\nThis takes 1 minute and will not increase the price."
+            "description": "We've recently updated our subscription system. To continue using KS Assistant Cloud you need to one-time approve the change in PayPal.\n\nThis takes 1 minute and will not increase the price."
           }
         },
         "abort": {
@@ -63,17 +63,17 @@
     },
     "reset_bad_custom_domain_configuration": {
       "title": "Custom domain ignored",
-      "description": "The DNS configuration for your custom domain ({custom_domains}) is not correct. This domain has now been ignored and will not be used for Home Assistant Cloud. If you want to use this domain, please fix the DNS configuration and restart Home Assistant. If you do not need this anymore, you can remove it from the account page."
+      "description": "The DNS configuration for your custom domain ({custom_domains}) is not correct. This domain has now been ignored and will not be used for KS Assistant Cloud. If you want to use this domain, please fix the DNS configuration and restart KS Assistant. If you do not need this anymore, you can remove it from the account page."
     }
   },
   "services": {
     "remote_connect": {
       "name": "Remote connect",
-      "description": "Makes the instance UI accessible from outside of the local network by using Home Assistant Cloud."
+      "description": "Makes the instance UI accessible from outside of the local network by using KS Assistant Cloud."
     },
     "remote_disconnect": {
       "name": "Remote disconnect",
-      "description": "Disconnects the Home Assistant UI from the Home Assistant Cloud. You will no longer be able to access your Home Assistant instance from outside your local network."
+      "description": "Disconnects the KS Assistant UI from the KS Assistant Cloud. You will no longer be able to access your KS Assistant instance from outside your local network."
     }
   }
 }

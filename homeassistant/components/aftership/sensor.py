@@ -50,7 +50,7 @@ async def async_setup_entry(
     async_add_entities([AfterShipSensor(aftership, config_entry.title)], True)
 
     async def handle_add_tracking(call: ServiceCall) -> None:
-        """Call when a user adds a new Aftership tracking from Home Assistant."""
+        """Call when a user adds a new Aftership tracking from KS Assistant."""
         await aftership.trackings.add(
             tracking_number=call.data[CONF_TRACKING_NUMBER],
             title=call.data.get(CONF_TITLE),
@@ -66,7 +66,7 @@ async def async_setup_entry(
     )
 
     async def handle_remove_tracking(call: ServiceCall) -> None:
-        """Call when a user removes an Aftership tracking from Home Assistant."""
+        """Call when a user removes an Aftership tracking from KS Assistant."""
         await aftership.trackings.remove(
             tracking_number=call.data[CONF_TRACKING_NUMBER],
             slug=call.data[CONF_SLUG],

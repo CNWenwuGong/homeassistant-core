@@ -1,4 +1,4 @@
-"""API for Minut Point bound to Home Assistant OAuth."""
+"""API for Minut Point bound to KS Assistant OAuth."""
 
 from aiohttp import ClientSession
 import pypoint

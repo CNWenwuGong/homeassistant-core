@@ -1,4 +1,4 @@
-"""Plugwise platform for Home Assistant Core."""
+"""Plugwise platform for KS Assistant Core."""
 
 from __future__ import annotations
 

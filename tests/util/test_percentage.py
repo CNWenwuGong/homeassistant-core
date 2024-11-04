@@ -1,4 +1,4 @@
-"""Test Home Assistant percentage conversions."""
+"""Test KS Assistant percentage conversions."""
 
 import math
 

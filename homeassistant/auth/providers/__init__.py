@@ -1,4 +1,4 @@
-"""Auth providers for Home Assistant."""
+"""Auth providers for KS Assistant."""
 
 from __future__ import annotations
 

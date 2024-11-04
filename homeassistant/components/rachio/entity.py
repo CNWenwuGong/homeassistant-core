@@ -1,4 +1,4 @@
-"""Adapter to wrap the rachiopy api for home assistant."""
+"""Adapter to wrap the rachiopy api for KS Assistant."""
 
 from abc import abstractmethod
 from typing import Any

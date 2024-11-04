@@ -275,7 +275,7 @@ async def _async_setup_integration(
 
     @callback
     def _on_hass_stop(_: Event) -> None:
-        """Cleanup when Home Assistant stops.
+        """Cleanup when KS Assistant stops.
 
         Cancel the async_update_stale schedule.
         """
@@ -534,7 +534,7 @@ def async_setup_scanner_platform(
 
     @callback
     def _on_hass_stop(_: Event) -> None:
-        """Cleanup when Home Assistant stops.
+        """Cleanup when KS Assistant stops.
 
         Cancel the legacy scan.
         """

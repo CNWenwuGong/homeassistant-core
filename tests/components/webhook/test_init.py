@@ -254,7 +254,7 @@ async def test_webhook_local_only(hass: HomeAssistant, mock_client) -> None:
     # No hook received
     assert len(hooks) == 1
 
-    # Request from Home Assistant Cloud remote UI
+    # Request from KS Assistant Cloud remote UI
     with patch(
         "hass_nabucasa.remote.is_cloud_request", Mock(get=Mock(return_value=True))
     ):

@@ -1,4 +1,4 @@
-"""Tests Home Assistant temperature helpers."""
+"""Tests KS Assistant temperature helpers."""
 
 import pytest
 

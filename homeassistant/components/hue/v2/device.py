@@ -1,4 +1,4 @@
-"""Handles Hue resource of type `device` mapping to Home Assistant device."""
+"""Handles Hue resource of type `device` mapping to KS Assistant device."""
 
 from __future__ import annotations
 

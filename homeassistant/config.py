@@ -442,7 +442,7 @@ def _write_default_config(config_dir: str) -> bool:
 
 
 async def async_hass_config_yaml(hass: HomeAssistant) -> dict:
-    """Load YAML from a Home Assistant configuration file.
+    """Load YAML from a KS Assistant configuration file.
 
     This function allows a component inside the asyncio loop to reload its
     configuration by itself. Include package merge.
@@ -681,7 +681,7 @@ def find_annotation(
 
 
 def _relpath(hass: HomeAssistant, path: str) -> str:
-    """Return path relative to the Home Assistant config dir."""
+    """Return path relative to the KS Assistant config dir."""
     return os.path.relpath(path, hass.config.config_dir)
 
 
@@ -1675,7 +1675,7 @@ def config_without_domain(config: ConfigType, domain: str) -> ConfigType:
 
 
 async def async_check_ha_config_file(hass: HomeAssistant) -> str | None:
-    """Check if Home Assistant configuration file is valid.
+    """Check if KS Assistant configuration file is valid.
 
     This method is a coroutine.
     """

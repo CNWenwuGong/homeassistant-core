@@ -1,4 +1,4 @@
-"""Home Assistant trigger dispatcher."""
+"""KS Assistant trigger dispatcher."""
 
 from typing import cast
 

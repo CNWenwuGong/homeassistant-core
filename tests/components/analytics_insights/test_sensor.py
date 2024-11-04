@@ -1,4 +1,4 @@
-"""Test the Home Assistant analytics sensor module."""
+"""Test the KS Assistant analytics sensor module."""
 
 from datetime import timedelta
 from unittest.mock import AsyncMock, patch

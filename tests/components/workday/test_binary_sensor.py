@@ -1,4 +1,4 @@
-"""Tests the Home Assistant workday binary sensor."""
+"""Tests the KS Assistant workday binary sensor."""
 
 from datetime import date, datetime, timedelta, timezone
 from typing import Any

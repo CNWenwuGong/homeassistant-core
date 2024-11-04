@@ -12,7 +12,7 @@
       "fields": {
         "datetime": {
           "name": "Date & Time",
-          "description": "The date/time to set. The time zone of the Home Assistant instance is assumed."
+          "description": "The date/time to set. The time zone of the KS Assistant instance is assumed."
         }
       }
     }

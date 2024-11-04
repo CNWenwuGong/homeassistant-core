@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "description": "Set up your Bosch Smart Home Controller to allow monitoring and control with Home Assistant.",
+        "description": "Set up your Bosch Smart Home Controller to allow monitoring and control with KS Assistant.",
         "title": "SHC authentication parameters",
         "data": {
           "host": "[%key:common::config_flow::data::host%]"
@@ -20,7 +20,7 @@
         }
       },
       "confirm_discovery": {
-        "description": "Smart Home Controller I: Please press the front-side button until LED starts flashing.\nSmart Home Controller II: Press the function button shortly. Cloud and network lights start blinking orange.\nDevice is now ready to be paired.\n\nReady to continue to set up {model} @ {host} with Home Assistant?"
+        "description": "Smart Home Controller I: Please press the front-side button until LED starts flashing.\nSmart Home Controller II: Press the function button shortly. Cloud and network lights start blinking orange.\nDevice is now ready to be paired.\n\nReady to continue to set up {model} @ {host} with KS Assistant?"
       },
       "reauth_confirm": {
         "title": "[%key:common::config_flow::title::reauth%]",

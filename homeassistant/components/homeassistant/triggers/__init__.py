@@ -1,1 +1,1 @@
-"""Home Assistant triggers."""
+"""KS Assistant triggers."""

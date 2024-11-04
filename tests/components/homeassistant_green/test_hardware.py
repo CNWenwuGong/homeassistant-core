@@ -1,4 +1,4 @@
-"""Test the Home Assistant Green hardware platform."""
+"""Test the KS Assistant Green hardware platform."""
 
 from unittest.mock import patch
 
@@ -25,7 +25,7 @@ async def test_hardware_info(
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
     with patch(
@@ -57,7 +57,7 @@ async def test_hardware_info(
                 },
                 "config_entries": [config_entry.entry_id],
                 "dongle": None,
-                "name": "Home Assistant Green",
+                "name": "KS Assistant Green",
                 "url": "https://green.home-assistant.io/documentation/",
             }
         ]
@@ -77,7 +77,7 @@ async def test_hardware_info_fail(
         data={},
         domain=DOMAIN,
         options={},
-        title="Home Assistant Green",
+        title="KS Assistant Green",
     )
     config_entry.add_to_hass(hass)
     with patch(

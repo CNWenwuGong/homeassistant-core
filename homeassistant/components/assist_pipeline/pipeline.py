@@ -143,7 +143,7 @@ def _async_resolve_default_pipeline_settings(
     if conversation_engine_id is None:
         conversation_engine_id = conversation.HOME_ASSISTANT_AGENT
 
-    # Find a matching language supported by the Home Assistant conversation agent
+    # Find a matching language supported by the KS Assistant conversation agent
     conversation_languages = language_util.matches(
         hass.config.language,
         conversation.async_get_conversation_languages(hass, conversation_engine_id),

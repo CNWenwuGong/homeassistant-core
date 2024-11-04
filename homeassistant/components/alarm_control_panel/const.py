@@ -24,7 +24,7 @@ class CodeFormat(StrEnum):
     NUMBER = "number"
 
 
-# These constants are deprecated as of Home Assistant 2022.5, can be removed in 2025.1
+# These constants are deprecated as of KS Assistant 2022.5, can be removed in 2025.1
 # Please use the CodeFormat enum instead.
 _DEPRECATED_FORMAT_TEXT: Final = DeprecatedConstantEnum(CodeFormat.TEXT, "2025.1")
 _DEPRECATED_FORMAT_NUMBER: Final = DeprecatedConstantEnum(CodeFormat.NUMBER, "2025.1")
@@ -41,7 +41,7 @@ class AlarmControlPanelEntityFeature(IntFlag):
     ARM_VACATION = 32
 
 
-# These constants are deprecated as of Home Assistant 2022.5
+# These constants are deprecated as of KS Assistant 2022.5
 # Please use the AlarmControlPanelEntityFeature enum instead.
 _DEPRECATED_SUPPORT_ALARM_ARM_HOME: Final = DeprecatedConstantEnum(
     AlarmControlPanelEntityFeature.ARM_HOME, "2025.1"

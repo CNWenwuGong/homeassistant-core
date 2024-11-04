@@ -46,7 +46,7 @@ class DlnaDmrData:
         self.event_notifier_refs = defaultdict(int)
 
     async def async_cleanup_event_notifiers(self, event: Event) -> None:
-        """Clean up resources when Home Assistant is stopped."""
+        """Clean up resources when KS Assistant is stopped."""
         LOGGER.debug("Cleaning resources in DlnaDmrData")
         async with self.lock:
             tasks = (

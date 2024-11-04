@@ -310,7 +310,7 @@ class AlexaEntity:
     def default_display_categories(self) -> list[str] | None:
         """Return a list of default display categories.
 
-        This can be overridden by the user in the Home Assistant configuration.
+        This can be overridden by the user in the KS Assistant configuration.
 
         See also DisplayCategory.
         """
@@ -340,9 +340,9 @@ class AlexaEntity:
             "endpointId": self.alexa_id(),
             "friendlyName": self.friendly_name(),
             "description": self.description(),
-            "manufacturerName": "Home Assistant",
+            "manufacturerName": "KS Assistant",
             "additionalAttributes": {
-                "manufacturer": "Home Assistant",
+                "manufacturer": "KS Assistant",
                 "model": self.entity.domain,
                 "softwareVersion": __version__,
                 "customIdentifier": f"{self.config.user_identifier()}-{self.entity_id}",

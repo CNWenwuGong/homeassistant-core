@@ -34,7 +34,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Listen for download events to download files."""
     download_path = entry.data[CONF_DOWNLOAD_DIR]
 
-    # If path is relative, we assume relative to Home Assistant config dir
+    # If path is relative, we assume relative to KS Assistant config dir
     if not os.path.isabs(download_path):
         download_path = hass.config.path(download_path)
 

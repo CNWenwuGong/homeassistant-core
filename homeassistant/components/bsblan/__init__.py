@@ -23,7 +23,7 @@ PLATFORMS = [Platform.CLIMATE, Platform.SENSOR]
 
 @dataclasses.dataclass
 class BSBLanData:
-    """BSBLan data stored in the Home Assistant data object."""
+    """BSBLan data stored in the KS Assistant data object."""
 
     coordinator: BSBLanUpdateCoordinator
     client: BSBLAN

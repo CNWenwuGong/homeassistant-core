@@ -1,1 +1,1 @@
-"""Helper methods for components within Home Assistant."""
+"""Helper methods for components within KS Assistant."""

@@ -1,4 +1,4 @@
-"""Integrates Native Apps to Home Assistant."""
+"""Integrates Native Apps to KS Assistant."""
 
 from contextlib import suppress
 from functools import partial

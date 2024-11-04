@@ -1,1 +1,1 @@
-"""Tests for the Home Assistant SkyConnect integration."""
+"""Tests for the KS Assistant SkyConnect integration."""

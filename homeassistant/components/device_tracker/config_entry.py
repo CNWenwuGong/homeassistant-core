@@ -397,7 +397,7 @@ class ScannerEntity(
         )
 
     async def async_internal_added_to_hass(self) -> None:
-        """Handle added to Home Assistant."""
+        """Handle added to KS Assistant."""
         # Entities without a unique ID don't have a device
         if (
             not self.registry_entry

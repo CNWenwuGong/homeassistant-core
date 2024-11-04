@@ -46,7 +46,7 @@ async def async_setup_entry(
         for device in controller.devices
         if device.capabilities.device_type is DeviceType.MOWER
     ]
-    _LOGGER.debug("Adding Ecovacs Mowers to Home Assistant: %s", mowers)
+    _LOGGER.debug("Adding Ecovacs Mowers to KS Assistant: %s", mowers)
     async_add_entities(mowers)
 
 

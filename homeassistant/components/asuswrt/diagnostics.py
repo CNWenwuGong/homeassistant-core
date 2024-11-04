@@ -31,7 +31,7 @@ async def async_get_config_entry_diagnostics(
 
     router = entry.runtime_data
 
-    # Gather information how this AsusWrt device is represented in Home Assistant
+    # Gather information how this AsusWrt device is represented in KS Assistant
     device_registry = dr.async_get(hass)
     entity_registry = er.async_get(hass)
     hass_device = device_registry.async_get_device(

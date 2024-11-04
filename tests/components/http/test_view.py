@@ -1,4 +1,4 @@
-"""Tests for Home Assistant View."""
+"""Tests for KS Assistant View."""
 
 from decimal import Decimal
 from http import HTTPStatus

@@ -80,7 +80,7 @@ SCAN_INTERVAL = datetime.timedelta(seconds=60)
 # Don't support rrules more often than daily
 VALID_FREQS = {"DAILY", "WEEKLY", "MONTHLY", "YEARLY"}
 
-# Ensure events created in Home Assistant have a positive duration
+# Ensure events created in KS Assistant have a positive duration
 MIN_NEW_EVENT_DURATION = datetime.timedelta(seconds=1)
 
 # Events must have a non-negative duration e.g. Google Calendar can create zero

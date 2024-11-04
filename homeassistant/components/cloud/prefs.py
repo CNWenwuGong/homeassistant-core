@@ -363,14 +363,14 @@ class CloudPreferences:
         return self._prefs.get(PREF_TTS_DEFAULT_VOICE, DEFAULT_TTS_DEFAULT_VOICE)  # type: ignore[no-any-return]
 
     async def get_cloud_user(self) -> str:
-        """Return ID of Home Assistant Cloud system user."""
+        """Return ID of KS Assistant Cloud system user."""
         user = await self._load_cloud_user()
 
         if user:
             return user.id
 
         user = await self._hass.auth.async_create_system_user(
-            "Home Assistant Cloud", group_ids=[GROUP_ID_ADMIN], local_only=True
+            "KS Assistant Cloud", group_ids=[GROUP_ID_ADMIN], local_only=True
         )
         assert user is not None
         await self.async_update(cloud_user=user.id)

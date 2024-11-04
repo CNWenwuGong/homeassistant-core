@@ -1,4 +1,4 @@
-"""Home Assistant Cast integration for Cast."""
+"""KS Assistant Cast integration for Cast."""
 
 from __future__ import annotations
 
@@ -16,9 +16,9 @@ from .const import DOMAIN, SIGNAL_HASS_CAST_SHOW_VIEW, HomeAssistantControllerDa
 SERVICE_SHOW_VIEW = "show_lovelace_view"
 ATTR_VIEW_PATH = "view_path"
 ATTR_URL_PATH = "dashboard_path"
-CAST_USER_NAME = "Home Assistant Cast"
+CAST_USER_NAME = "KS Assistant Cast"
 NO_URL_AVAILABLE_ERROR = (
-    "Home Assistant Cast requires your instance to be reachable via HTTPS. Enable Home"
+    "KS Assistant Cast requires your instance to be reachable via HTTPS. Enable Home"
     " Assistant Cloud or set up an external URL with valid SSL certificates"
 )
 
@@ -26,7 +26,7 @@ NO_URL_AVAILABLE_ERROR = (
 async def async_setup_ha_cast(
     hass: core.HomeAssistant, entry: config_entries.ConfigEntry
 ):
-    """Set up Home Assistant Cast."""
+    """Set up KS Assistant Cast."""
     user_id: str | None = entry.data.get("user_id")
     user: auth.models.User | None = None
 
@@ -56,7 +56,7 @@ async def async_setup_ha_cast(
         hass_uuid = await instance_id.async_get(hass)
 
         controller_data = HomeAssistantControllerData(
-            # If you are developing Home Assistant Cast, uncomment and set to
+            # If you are developing KS Assistant Cast, uncomment and set to
             # your dev app id.
             # app_id="5FE44367",
             hass_url=hass_url,
@@ -92,7 +92,7 @@ async def async_setup_ha_cast(
 async def async_remove_user(
     hass: core.HomeAssistant, entry: config_entries.ConfigEntry
 ):
-    """Remove Home Assistant Cast user."""
+    """Remove KS Assistant Cast user."""
     user_id: str | None = entry.data.get("user_id")
 
     if user_id is not None and (user := await hass.auth.async_get_user(user_id)):

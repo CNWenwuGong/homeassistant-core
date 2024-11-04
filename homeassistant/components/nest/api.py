@@ -1,4 +1,4 @@
-"""API for Google Nest Device Access bound to Home Assistant OAuth."""
+"""API for Google Nest Device Access bound to KS Assistant OAuth."""
 
 from __future__ import annotations
 
@@ -50,7 +50,7 @@ class AsyncConfigEntryAuth(AbstractAuth):
 
     async def async_get_creds(self) -> Credentials:
         """Return an OAuth credential for Pub/Sub Subscriber."""
-        # We don't have a way for Home Assistant to refresh creds on behalf
+        # We don't have a way for KS Assistant to refresh creds on behalf
         # of the google pub/sub subscriber. Instead, build a full
         # Credentials object with enough information for the subscriber to
         # handle this on its own. We purposely don't refresh the token here

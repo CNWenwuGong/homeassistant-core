@@ -1,4 +1,4 @@
-"""Handle the frontend for Home Assistant."""
+"""Handle the frontend for KS Assistant."""
 
 from __future__ import annotations
 
@@ -189,8 +189,8 @@ MANIFEST_JSON = Manifest(
             }
         ],
         "lang": "en-US",
-        "name": "Home Assistant",
-        "short_name": "Home Assistant",
+        "name": "KS Assistant",
+        "short_name": "KS Assistant",
         "start_url": "/?homescreen=1",
         "id": "/?homescreen=1",
         "theme_color": DEFAULT_THEME_COLOR,
@@ -815,8 +815,8 @@ async def websocket_get_version(
     frontend = None
 
     for req in integration.requirements:
-        if req.startswith("home-assistant-frontend=="):
-            frontend = req.removeprefix("home-assistant-frontend==")
+        if req.startswith("ks-assistant-frontend=="):
+            frontend = req.removeprefix("ks-assistant-frontend==")
 
     if frontend is None:
         connection.send_error(msg["id"], "unknown_version", "Version not found")

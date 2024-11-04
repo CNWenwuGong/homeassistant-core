@@ -1,4 +1,4 @@
-"""API for Weheat bound to Home Assistant OAuth."""
+"""API for Weheat bound to KS Assistant OAuth."""
 
 from aiohttp import ClientSession
 from weheat.abstractions import AbstractAuth

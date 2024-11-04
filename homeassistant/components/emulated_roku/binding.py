@@ -1,4 +1,4 @@
-"""Bridge between emulated_roku and Home Assistant."""
+"""Bridge between emulated_roku and KS Assistant."""
 
 import logging
 

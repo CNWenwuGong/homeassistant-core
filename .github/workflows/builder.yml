@@ -18,7 +18,7 @@ env:
 jobs:
   init:
     name: Initialize build
-    if: github.repository_owner == 'home-assistant'
+    if: github.repository_owner == 'CNWenwuGong'
     runs-on: ubuntu-latest
     outputs:
       architectures: ${{ steps.info.outputs.architectures }}
@@ -97,7 +97,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v6
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
-          repo: home-assistant/frontend
+          repo: CNWenwuGong/homeassistant-frontend
           branch: dev
           workflow: nightly.yaml
           workflow_conclusion: success
@@ -131,17 +131,17 @@ jobs:
           uv pip install .
           python3 script/version_bump.py nightly --set-nightly-version "${{ needs.init.outputs.version }}"
 
-          if [[ "$(ls home_assistant_frontend*.whl)" =~ ^home_assistant_frontend-(.*)-py3-none-any.whl$ ]]; then
+          if [[ "$(ls ks_assistant_frontend*.whl)" =~ ^ks_assistant_frontend-(.*)-py3-none-any.whl$ ]]; then
             echo "Found frontend wheel, setting version to: ${BASH_REMATCH[1]}"
             frontend_version="${BASH_REMATCH[1]}" yq \
               --inplace e -o json \
-              '.requirements = ["home-assistant-frontend=="+env(frontend_version)]' \
+              '.requirements = ["ks-assistant-frontend=="+env(frontend_version)]' \
               homeassistant/components/frontend/manifest.json
 
-            sed -i "s|home-assistant-frontend==.*|home-assistant-frontend==${BASH_REMATCH[1]}|" \
+            sed -i "s|ks-assistant-frontend==.*|ks-assistant-frontend==${BASH_REMATCH[1]}|" \
               homeassistant/package_constraints.txt
 
-            sed -i "s|home-assistant-frontend==.*||" requirements_all.txt
+            sed -i "s|ks-assistant-frontend==.*||" requirements_all.txt
           fi
 
           if [[ "$(ls home_assistant_intents*.whl)" =~ ^home_assistant_intents-(.*)-py3-none-any.whl$ ]]; then
@@ -292,7 +292,7 @@ jobs:
         uses: home-assistant/actions/helpers/version-push@master
         with:
           key: "homeassistant[]"
-          key-description: "Home Assistant Core"
+          key-description: "KS Assistant Core"
           version: ${{ needs.init.outputs.version }}
           channel: ${{ needs.init.outputs.channel }}
 
@@ -301,7 +301,7 @@ jobs:
         uses: home-assistant/actions/helpers/version-push@master
         with:
           key: "homeassistant[]"
-          key-description: "Home Assistant Core"
+          key-description: "KS Assistant Core"
           version: ${{ needs.init.outputs.version }}
           channel: beta
 

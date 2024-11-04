@@ -30,7 +30,7 @@
   "issues": {
     "remove_value_template": {
       "title": "The {domain} integration cannot start",
-      "description": "Configuring {domain} using YAML is being removed and the `{parameter}` parameter cannot be imported.\n\nPlease remove `{parameter}` from your `{domain}` yaml configuration and restart Home Assistant\n\nAlternatively, you may entirely remove the `{domain}` configuration from your configuration.yaml, restart Home Assistant, and add the {domain} integration manually."
+      "description": "Configuring {domain} using YAML is being removed and the `{parameter}` parameter cannot be imported.\n\nPlease remove `{parameter}` from your `{domain}` yaml configuration and restart KS Assistant\n\nAlternatively, you may entirely remove the `{domain}` configuration from your configuration.yaml, restart KS Assistant, and add the {domain} integration manually."
     },
     "missing_include_only_feed_id": {
       "title": "No feed synchronized with the {domain} sensor",

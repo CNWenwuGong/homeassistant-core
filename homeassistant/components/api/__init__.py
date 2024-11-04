@@ -1,4 +1,4 @@
-"""Rest API for Home Assistant."""
+"""Rest API for KS Assistant."""
 
 import asyncio
 from asyncio import shield, timeout
@@ -115,8 +115,8 @@ class APICoreStateView(HomeAssistantView):
         """Retrieve the current core state.
 
         This API is intended to be a fast and lightweight way to check if the
-        Home Assistant core is running. Its primary use case is for supervisor
-        to check if Home Assistant is running.
+        KS Assistant core is running. Its primary use case is for supervisor
+        to check if KS Assistant is running.
         """
         hass = request.app[KEY_HASS]
         migration = recorder.async_migration_in_progress(hass)

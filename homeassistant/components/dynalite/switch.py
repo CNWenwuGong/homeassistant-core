@@ -23,7 +23,7 @@ async def async_setup_entry(
 
 
 class DynaliteSwitch(DynaliteBase, SwitchEntity):
-    """Representation of a Dynalite Channel as a Home Assistant Switch."""
+    """Representation of a Dynalite Channel as a KS Assistant Switch."""
 
     @property
     def is_on(self) -> bool:

@@ -1,4 +1,4 @@
-"""Test to verify that Home Assistant exceptions work."""
+"""Test to verify that KS Assistant exceptions work."""
 
 from __future__ import annotations
 

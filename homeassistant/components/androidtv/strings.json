@@ -73,7 +73,7 @@
     },
     "download": {
       "name": "Download",
-      "description": "Downloads a file from your Android / Fire TV device to your Home Assistant instance.",
+      "description": "Downloads a file from your Android / Fire TV device to your KS Assistant instance.",
       "fields": {
         "device_path": {
           "name": "Device path",
@@ -81,13 +81,13 @@
         },
         "local_path": {
           "name": "Local path",
-          "description": "The filepath on your Home Assistant instance."
+          "description": "The filepath on your KS Assistant instance."
         }
       }
     },
     "upload": {
       "name": "Upload",
-      "description": "Uploads a file from your Home Assistant instance to an Android / Fire TV device.",
+      "description": "Uploads a file from your KS Assistant instance to an Android / Fire TV device.",
       "fields": {
         "device_path": {
           "name": "[%key:component::androidtv::services::download::fields::device_path::name%]",

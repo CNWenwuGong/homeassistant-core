@@ -1,4 +1,4 @@
-"""Home Assistant component for accessing the Wallbox Portal API. The switch component creates a switch entity."""
+"""KS Assistant component for accessing the Wallbox Portal API. The switch component creates a switch entity."""
 
 from __future__ import annotations
 

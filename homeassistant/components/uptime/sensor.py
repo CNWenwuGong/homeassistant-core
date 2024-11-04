@@ -1,4 +1,4 @@
-"""Platform to retrieve uptime for Home Assistant."""
+"""Platform to retrieve uptime for KS Assistant."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Test for a Home Assistant bridge that changes climate features at runtime."""
+"""Test for a KS Assistant bridge that changes climate features at runtime."""
 
 from homeassistant.components.climate import ATTR_SWING_MODES, ClimateEntityFeature
 from homeassistant.const import ATTR_SUPPORTED_FEATURES

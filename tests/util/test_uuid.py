@@ -1,4 +1,4 @@
-"""Test Home Assistant uuid util methods."""
+"""Test KS Assistant uuid util methods."""
 
 import uuid
 

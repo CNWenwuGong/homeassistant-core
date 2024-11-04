@@ -77,7 +77,7 @@ class AssistPipelineSelect(SelectEntity, restore_state.RestoreEntity):
         self._update_options()
 
     async def async_added_to_hass(self) -> None:
-        """When entity is added to Home Assistant."""
+        """When entity is added to KS Assistant."""
         await super().async_added_to_hass()
 
         pipeline_data: PipelineData = self.hass.data[DOMAIN]
@@ -145,7 +145,7 @@ class VadSensitivitySelect(SelectEntity, restore_state.RestoreEntity):
         self.hass = hass
 
     async def async_added_to_hass(self) -> None:
-        """When entity is added to Home Assistant."""
+        """When entity is added to KS Assistant."""
         await super().async_added_to_hass()
 
         state = await self.async_get_last_state()

@@ -3,7 +3,7 @@
     "flow_title": "{name}",
     "step": {
       "user": {
-        "description": "Set up your Cambridge Audio Streamer to integrate with Home Assistant.",
+        "description": "Set up your Cambridge Audio Streamer to integrate with KS Assistant.",
         "data": {
           "host": "[%key:common::config_flow::data::host%]"
         },

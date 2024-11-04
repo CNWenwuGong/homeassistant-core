@@ -1,4 +1,4 @@
-"""Test Home Assistant timeout handler."""
+"""Test KS Assistant timeout handler."""
 
 import asyncio
 from contextlib import suppress

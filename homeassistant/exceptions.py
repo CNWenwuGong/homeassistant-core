@@ -1,4 +1,4 @@
-"""The exceptions used by Home Assistant."""
+"""The exceptions used by KS Assistant."""
 
 from __future__ import annotations
 
@@ -32,7 +32,7 @@ def import_async_get_exception_message() -> (
 
 
 class HomeAssistantError(Exception):
-    """General Home Assistant exception occurred."""
+    """General KS Assistant exception occurred."""
 
     _message: str | None = None
     generate_message: bool = False

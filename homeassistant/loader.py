@@ -1,4 +1,4 @@
-"""The methods for loading Home Assistant integrations.
+"""The methods for loading KS Assistant integrations.
 
 This module has quite some complex parts. I have tried to add as much
 documentation as possible to keep it understandable.
@@ -91,16 +91,16 @@ class BlockedIntegration:
 
 BLOCKED_CUSTOM_INTEGRATIONS: dict[str, BlockedIntegration] = {
     # Added in 2024.3.0 because of https://github.com/home-assistant/core/issues/112464
-    "start_time": BlockedIntegration(AwesomeVersion("1.1.7"), "breaks Home Assistant"),
+    "start_time": BlockedIntegration(AwesomeVersion("1.1.7"), "breaks KS Assistant"),
     # Added in 2024.5.1 because of
     # https://community.home-assistant.io/t/psa-2024-5-upgrade-failure-and-dreame-vacuum-custom-integration/724612
     "dreame_vacuum": BlockedIntegration(
-        AwesomeVersion("1.0.4"), "crashes Home Assistant"
+        AwesomeVersion("1.0.4"), "crashes KS Assistant"
     ),
     # Added in 2024.5.5 because of
     # https://github.com/sh00t2kill/dolphin-robot/issues/185
     "mydolphin_plus": BlockedIntegration(
-        AwesomeVersion("1.0.13"), "crashes Home Assistant"
+        AwesomeVersion("1.0.13"), "crashes KS Assistant"
     ),
     # Added in 2024.7.2 because of
     # https://github.com/gcobb321/icloud3/issues/349
@@ -136,15 +136,15 @@ PACKAGE_CUSTOM_COMPONENTS = "custom_components"
 PACKAGE_BUILTIN = "homeassistant.components"
 CUSTOM_WARNING = (
     "We found a custom integration %s which has not "
-    "been tested by Home Assistant. This component might "
+    "been tested by KS Assistant. This component might "
     "cause stability problems, be sure to disable it if you "
-    "experience issues with Home Assistant"
+    "experience issues with KS Assistant"
 )
 IMPORT_EVENT_LOOP_WARNING = (
     "We found an integration %s which is configured to "
     "to import its code in the event loop. This component might "
     "cause stability problems, be sure to disable it if you "
-    "experience issues with Home Assistant"
+    "experience issues with KS Assistant"
 )
 
 MOVED_ZEROCONF_PROPS = ("macaddress", "model", "manufacturer")
@@ -652,7 +652,7 @@ def async_register_preload_platform(hass: HomeAssistant, platform_name: str) -> 
 
 
 class Integration:
-    """An integration in Home Assistant."""
+    """An integration in KS Assistant."""
 
     @classmethod
     def resolve_from_root(
@@ -1557,7 +1557,7 @@ class Components:
         report(
             (
                 f"accesses hass.components.{comp_name}."
-                " This is deprecated and will stop working in Home Assistant 2025.3, it"
+                " This is deprecated and will stop working in KS Assistant 2025.3, it"
                 f" should be updated to import functions used from {comp_name} directly"
             ),
             error_if_core=False,
@@ -1586,7 +1586,7 @@ class Helpers:
         report(
             (
                 f"accesses hass.helpers.{helper_name}."
-                " This is deprecated and will stop working in Home Assistant 2025.5, it"
+                " This is deprecated and will stop working in KS Assistant 2025.5, it"
                 f" should be updated to import functions used from {helper_name} directly"
             ),
             error_if_core=False,

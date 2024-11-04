@@ -1,4 +1,4 @@
-"""Provide methods to bootstrap a Home Assistant instance."""
+"""Provide methods to bootstrap a KS Assistant instance."""
 
 from __future__ import annotations
 
@@ -257,7 +257,7 @@ PRELOAD_STORAGE = [
 async def async_setup_hass(
     runtime_config: RuntimeConfig,
 ) -> core.HomeAssistant | None:
-    """Set up Home Assistant."""
+    """Set up KS Assistant."""
 
     async def create_hass() -> core.HomeAssistant:
         """Create the hass object and do basic setup."""
@@ -393,7 +393,7 @@ def open_hass_ui(hass: core.HomeAssistant) -> None:
 
     if not webbrowser.open(url):
         _LOGGER.warning(
-            "Unable to open the Home Assistant UI in a browser. Open it yourself at %s",
+            "Unable to open the KS Assistant UI in a browser. Open it yourself at %s",
             url,
         )
 
@@ -443,7 +443,7 @@ async def async_load_base_functionality(hass: core.HomeAssistant) -> None:
 async def async_from_config_dict(
     config: ConfigType, hass: core.HomeAssistant
 ) -> core.HomeAssistant | None:
-    """Try to configure Home Assistant from a configuration dictionary.
+    """Try to configure KS Assistant from a configuration dictionary.
 
     Dynamically loads required components and its dependencies.
     This method is a coroutine.
@@ -471,10 +471,10 @@ async def async_from_config_dict(
             )
         )
     ):
-        _LOGGER.error("Home Assistant core failed to initialize. ")
+        _LOGGER.error("KS Assistant core failed to initialize. ")
         return None
 
-    _LOGGER.debug("Home Assistant core initialized")
+    _LOGGER.debug("KS Assistant core initialized")
 
     core_config = config.get(core.DOMAIN, {})
 
@@ -486,14 +486,14 @@ async def async_from_config_dict(
         return None
     except HomeAssistantError:
         _LOGGER.error(
-            "Home Assistant core failed to initialize. Further initialization aborted"
+            "KS Assistant core failed to initialize. Further initialization aborted"
         )
         return None
 
     await _async_set_up_integrations(hass, config)
 
     stop = monotonic()
-    _LOGGER.info("Home Assistant initialized in %.2fs", stop - start)
+    _LOGGER.info("KS Assistant initialized in %.2fs", stop - start)
 
     if (
         REQUIRED_NEXT_PYTHON_HA_RELEASE
@@ -504,7 +504,7 @@ async def async_from_config_dict(
         _LOGGER.warning(
             (
                 "Support for the running Python version %s is deprecated and "
-                "will be removed in Home Assistant %s; "
+                "will be removed in KS Assistant %s; "
                 "Please upgrade Python to %s"
             ),
             current_python_version,
